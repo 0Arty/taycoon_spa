@@ -20,6 +20,7 @@
     }
 
     .text {
+        min-height: 20px;
         width: 230px;
         position: absolute;
         top: 50%;
@@ -58,7 +59,14 @@
         font-size: 18px;
         }
         .text{
+            width: calc(230px / 1.4);
             font-size: 14px;
+        }
+        .svg{
+            svg{
+                width: calc(180px / 1.4);
+                height: calc(180px / 1.4);
+            }
         }
     }
 }
