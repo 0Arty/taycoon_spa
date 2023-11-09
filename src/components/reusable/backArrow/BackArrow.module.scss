@@ -1,0 +1,12 @@
+    .arrow {
+        fill: white;
+        transition: 0.3s;
+        margin-left: 50px;
+
+        &:hover {
+            fill: #FAC149;
+            transition: 0.2s;
+            scale: 1.1;
+            cursor: pointer;
+        }
+    }

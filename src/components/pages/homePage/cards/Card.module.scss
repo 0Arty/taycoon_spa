@@ -1,0 +1,72 @@
+.box {
+    width: 250px;
+    height: 280px;
+    border-radius: 20px;
+    background: linear-gradient(143deg, rgba(5, 100, 97, 0.11) 0%, rgba(217, 217, 217, 0.00) 102.22%);
+    display: flex;
+    flex-direction: column;
+    position: relative;    
+
+    .title {
+        margin-top: 10px ;
+        color: var(--green, #056461);
+        text-align: center;
+        text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+        font-family: Montserrat;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .text {
+        min-height: 20px;
+        width: 230px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--darkgreen, #06413F);
+        text-align: center;
+        vertical-align: middle;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+    }
+    .svg{
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        svg{
+            width: 180px;
+            height: 180px;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .box {
+        width: calc(250px / 1.4);
+        height: calc(280px / 1.4);
+        .title{
+        font-size: 18px;
+        }
+        .text{
+            width: calc(230px / 1.4);
+            font-size: 14px;
+        }
+        .svg{
+            svg{
+                width: calc(180px / 1.4);
+                height: calc(180px / 1.4);
+            }
+        }
+    }
+}
