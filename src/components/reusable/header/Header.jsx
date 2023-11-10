@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setIsOpen } from "../../../store/slices/headerSlice";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import classNames from 'classnames';
 
@@ -33,15 +33,19 @@ const Header = ({ props }) => {
             opacity: 0,
         }
     }
+    const navigate = useNavigate()
+    const goToMainHandler = () => {
+        navigate('/')
+    }
 
     return (
         <div className={style.wrapper}>
             <div className={style.content_box}>
                 <div className={style.logo}>
-                    <Link className={style.logo_link}>
-                        <Logo to={'/'} />
+                    <div className={style.logo_link} onClick={goToMainHandler}>
+                        <Logo />
                         <h1>Taycoon®</h1>
-                    </Link>
+                    </div>
                 </div>
                 <nav className={style.navigation}>
                     <ul >

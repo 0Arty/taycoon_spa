@@ -1,18 +1,18 @@
 import BackArrow from "../../../reusable/backArrow/BackArrow";
 import style from "./Menu.module.scss"
 
-const Menu = ({ props }) => {
+const Menu = ({ toWhite, toBlack }) => {
 
     return (
         <div className={style.box}>
                 <h3>Барвники для полімерів</h3>
-                <div className = {style.arrow}>
+                {/* <div className = {style.arrow}>
                     <BackArrow /> 
-                </div>
+                </div> */}
                 <div className = {style.btns}>
-                    <h4>Білі</h4>
-                    <h4>Чорні</h4>
-                    <h4>Кольорові</h4>
+                    <button onClick={toWhite}>Білі</button>
+                    <button onClick={toBlack}>Чорні</button>
+                    <button onClick={()=>{}}>Кольорові</button>
                 </div>
         </div>
     )

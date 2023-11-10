@@ -27,9 +27,12 @@
 
         bottom: 150px;
         display: flex;
-
-        h4 {
+        justify-content: center;
+        button {
             width: 33%;
+            outline: none; /* Для синий ободки */
+            border: 0;
+            background: transparent;
             text-align: center;
             color: var(--white, #FFF);
             font-size: 36px;
@@ -50,9 +53,10 @@
 
     .arrow {
         position: absolute;
-        left: 25px;
-        top: 25px;
-        transform: translate(0, 50%);
+        z-index: 1000;
+        left: px;
+        bottom: 150px;
+        transform: translate(0, 25%);
     }
 }
 
@@ -67,6 +71,7 @@
 
             h4 {
                 font-size: 24px;
+                width: 25%;
             }
         }
     }
@@ -76,6 +81,10 @@
 
     .box {
         h3 {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             font-size: 48px;
         }
 
@@ -84,7 +93,7 @@
             width: fit-content;
             gap: 30px;
             right: 40px;
-            h4 {
+            button {
                 text-align: right;
                 width: 100%;
 

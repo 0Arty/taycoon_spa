@@ -2,10 +2,10 @@
     height: 55px;
     width: 100%;
     position: absolute;
-    top: 0px;
-    z-index: 100;
+    top: 0;
+    z-index: 1000;
     background-color: #FFF;
-
+    
     .content_box {
         z-index: 100;
         background-color: #FFF;
@@ -27,6 +27,9 @@
                 align-items: center;
                 text-decoration: none;
                 color: #06413F;
+                &:hover{
+                    cursor: pointer;
+                }
 
                 h1 {
                     margin-left: 5px;

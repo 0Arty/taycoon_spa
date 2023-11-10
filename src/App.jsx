@@ -11,7 +11,6 @@ const App = ({ props }) => {
     <div className={style.box}>
       <Header />
       <Routes >
-
         <Route path='/' element={ <HomePage />}/>
         <Route path='/masterbatch' element={<MasterbatchPage />} />
         {/* <Route path='*' element={NotFound}/> */}
