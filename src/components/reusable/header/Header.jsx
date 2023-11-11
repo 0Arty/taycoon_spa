@@ -1,38 +1,20 @@
-import { useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { setIsOpen } from "../../../store/slices/headerSlice";
-
-import { Link, useNavigate } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
-import classNames from 'classnames';
-
 import style from "./Header.module.scss"
-import style2 from "./Hamburger.module.scss"
-import { ReactComponent as Selector } from "../../../assets/header/Selector.svg"
+import { useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+
 import { ReactComponent as Logo } from "../../../assets/header/Logo.svg"
+
+import LngSelector from "./languageSelector/LngSelector";
+import MenuBtn from "./menuBtn/MenuBtn";
+import AnimatedMenu from "./animatedMenu/AnimatedMenu";
+import { useTranslation } from "react-i18next";
+
+
 
 const Header = ({ props }) => {
 
-    const dispatch = useDispatch()
-    const btn = useRef()
-    const openMenuhandler = () => {
-        dispatch(setIsOpen())
-    }
     const isOpen = useSelector((state) => state.headerSlice.isOpen)
-    const variableForAnimation = {
-        init: {
-            y: -250,
-            opacity: 0
-        },
-        animate: {
-            y: 0,
-            opacity: 1
-        },
-        exit: {
-            y: -250,
-            opacity: 0,
-        }
-    }
+    const {t} = useTranslation()
     const navigate = useNavigate()
     const goToMainHandler = () => {
         navigate('/')
@@ -49,57 +31,18 @@ const Header = ({ props }) => {
                 </div>
                 <nav className={style.navigation}>
                     <ul >
-                        <li><Link className={style.link}>Продукція</Link></li>
-                        <li><Link className={style.link}>Про компанію</Link></li>
-                        <li><Link className={style.link}>Сертифікати</Link></li>
-                        <li><Link className={style.link}>Клієнти</Link></li>
-                        <li><Link className={style.link}>Контаки</Link></li>
-                        <li>
-                            <div className={style.btn}>
-                                <span>Ua</span>
-                                <Selector />
-                            </div>
-                        </li>
+                        <li><Link className={style.link}>{t("header.product")}</Link></li>
+                        <li><Link className={style.link}>{t("header.aboutCompany")}</Link></li>
+                        <li><Link className={style.link}>{t("header.certificats")}</Link></li>
+                        <li><Link className={style.link}>{t("header.clients")}</Link></li>
+                        <li><Link className={style.link}>{t("header.contacts")}</Link></li>
+                        <li><LngSelector /></li>
                     </ul>
                 </nav>
-                <div className={style.menu}>
-                    <div className={style2.menu_wrapper}
-                        onClick={() => { openMenuhandler() }}
-                    >
-                        <div ref={btn}
-                            className={classNames(style2.hamburger_menu, { [style2.animate]: isOpen })}>
-                        </div>
-                    </div>
-                </div>
-
-
+                <MenuBtn isOpen={isOpen} />
             </div>
-            <AnimatePresence >
-                {isOpen && (
-                    <motion.div
-                        className={style.menu_window}
-                        variants={variableForAnimation}
-                        initial={'init'}
-                        animate={'animate'}
-                        exit={'exit'}
-                        transition={{ duration: 0.5 }}
-                    >
-                        <ul >
-                            <li><Link className={style.link}>Продукція</Link></li>
-                            <li><Link className={style.link}>Про компанію</Link></li>
-                            <li><Link className={style.link}>Сертифікати</Link></li>
-                            <li><Link className={style.link}>Клієнти</Link></li>
-                            <li><Link className={style.link}>Контаки</Link></li>
-                            <li>
-                                <div className={style.btn}>
-                                    <span>Ua</span>
-                                    <Selector />
-                                </div>
-                            </li>
-                        </ul>
-                    </motion.div>)}
-            </AnimatePresence>
 
+            <AnimatedMenu isOpen={isOpen}/>
 
         </div>
     )

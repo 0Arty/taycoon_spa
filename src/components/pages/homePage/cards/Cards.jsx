@@ -6,29 +6,31 @@ import { ReactComponent as Factory } from "../../../../assets/homepage/cards/fac
 import { ReactComponent as Guarantees } from "../../../../assets/homepage/cards/guarantees.svg";
 import { ReactComponent as Laboratory } from "../../../../assets/homepage/cards/laboratory.svg";
 import { ReactComponent as Supporting } from "../../../../assets/homepage/cards/supporting.svg";
- 
+import { useTranslation } from "react-i18next";
+
 const Cards = ({ props }) => {
 
+    const { t } = useTranslation()
     return (
         <div className={style.content}>
 
-            <Card title={'Економія'} text={'- знижки для оптових покупців, можливе відстрочення платежу'} >
+            <Card title={t('homePage.cards.saving')} text={t('homePage.cards.saving subtitle')} >
                 <Economy />
             </ Card>
 
-            <Card title={'Доставка'} text={'- доставляємо по всій Україні'} >
+            <Card title={t('homePage.cards.delivery')} text={t('homePage.cards.delivery subtitle')} >
                 <Delivery />
             </ Card>
-            <Card title={'Гарантії'} text={'- виконуємо замовлення вчасно та на 100%'} >
+            <Card title={t('homePage.cards.guarantees')} text={t('homePage.cards.guarantees subtitle')} >
                 <Factory />
             </ Card >
-            <Card title={'Виробництво'} text={'- розробка продуктів з урахуванням специфіки, вимог та технології замовника'} >
+            <Card title={t('homePage.cards.fabric')} text={t('homePage.cards.fabric subtitle')} >
                 <Guarantees />
             </ Card >
-            <Card title={'Лабораторія'} text={'- індивідуальні лабораторні аналізи та випробування'} >
+            <Card title={t('homePage.cards.lab')} text={t('homePage.cards.lab subtitle')} >
                 <Laboratory />
             </ Card >
-            <Card title={'Лабораторія'} text={'- безкоштовна консультація щодо технічного застосування різних методів термопластичної обробки'} >
+            <Card title={t('homePage.cards.support')} text={t('homePage.cards.support subtitle')} >
                 <Supporting />
             </ Card >
 

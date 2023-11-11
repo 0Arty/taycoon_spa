@@ -1,10 +1,13 @@
 import style from "./Company.module.scss"
 import { ReactComponent as Logo } from "../../../../assets/header/Logo.svg";
+import { useTranslation } from "react-i18next";
 
 
 
 const Company = ({ props }) => {
 
+    const {t} = useTranslation()
+    
     return (
         <div className={style.box}>
             <div className={style.wrapper}>
@@ -12,7 +15,7 @@ const Company = ({ props }) => {
                     <Logo className={style.svg_logo} />
                     <h3>Taycoon®</h3>
                 </div>
-                <span>Ви ставите завдання – ми його вирішуємо! </span>
+                <span>{t('homePage.company.heading')} </span>
             </div>
         </div>
     )

@@ -3,7 +3,7 @@ import style from "./App.module.scss"
 import Header from "./components/reusable/header/Header";
 import MasterbatchPage from "./components/pages/masterbatchPage/MasterbatchPage";
 import HomePage from "./components/pages/homePage/HomePage";
-
+import './i18n/index.js'
 
 const App = ({ props }) => {
 

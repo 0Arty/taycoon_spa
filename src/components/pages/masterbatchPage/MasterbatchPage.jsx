@@ -3,6 +3,7 @@ import style from "./MasterbatchPage.module.scss"
 import Menu from "./menu/Menu";
 import White from "./white/White";
 import Black from "./black/Black";
+import Colors from "./colors/Colors";
 
 const MasterbatchPage = ({props}) => {
 
@@ -21,7 +22,7 @@ const MasterbatchPage = ({props}) => {
         <Menu toWhite={toWhite} toBlack= {toBlack}/> 
         <White ref={refWhite}/>
         <Black ref={refBlack}/>
-
+        <Colors />
     </div>
   )
 };
