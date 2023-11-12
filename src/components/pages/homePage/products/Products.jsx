@@ -1,8 +1,9 @@
 import classNames from "classnames";
 import style from "./Products.module.scss"
 import { Link, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { routes } from "../../../../routes";
+
 
 const Products = ({ props }) => {
 
@@ -16,20 +17,50 @@ const Products = ({ props }) => {
 
     return (
         <div className={style.box}>
-            <div className={classNames(style.element, style.mastebatch)}
-                onClick={(e) => { goToMasterbatchHandler(e) }}>
-                <Link className={style.link} to={'/masterbatch'}>
-                    <h2>{t('homePage.products.masterbatch')}</h2>
+            <div
+                className={classNames(style.element, style.mastebatch)}
+                onClick={(e) => { goToMasterbatchHandler(e) }}
+            >
+                <Link className={style.link}
+                    to={routes.MASTERBATCH}>
+                    <h2>
+                        {t('homePage.products.masterbatch')}
+                    </h2>
                 </Link>
             </div>
-            <div className={classNames(style.element, style.net)}>
-                <Link className={style.link}><h2>{t('homePage.products.net')}</h2></Link>
+            <div
+                className={classNames(style.element, style.net)}
+            >
+                <Link className={style.link}
+                    to={routes.PACKING_NET}
+                >
+                    <h2>
+                        {t('homePage.products.net')}
+                    </h2>
+                </Link>
             </div>
-            <div className={classNames(style.element, style.addivities)}>
-                <Link className={style.link}><h2>{t('homePage.products.addition')}</h2></Link>
+            <div
+                className={classNames(style.element, style.addivities)}
+            >
+                <Link className={style.link}
+                    to={routes.ADDITIVES}
+                >
+                    <h2>
+                        {t('homePage.products.addition')}
+                    </h2>
+                </Link>
             </div>
-            <div className={classNames(style.element, style.composites)}>
-                <Link className={style.link}><h2>{t('homePage.products.composites')}</h2></Link>
+            <div
+                className={classNames(style.element, style.composites)}
+            >
+                <Link
+                    className={style.link}
+                    to={routes.COMPOSITES}
+                    >
+                    <h2>
+                        {t('homePage.products.composites')}
+                    </h2>
+                </Link>
             </div>
 
         </div>

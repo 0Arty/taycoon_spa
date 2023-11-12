@@ -1,7 +1,7 @@
 import style from "./Company.module.scss"
 import { ReactComponent as Logo } from "../../../../assets/header/Logo.svg";
 import { useTranslation } from "react-i18next";
-
+import {ReactComponent as Svg} from '../../../../assets/Vector.svg'
 
 
 const Company = ({ props }) => {
@@ -16,6 +16,7 @@ const Company = ({ props }) => {
                     <h3>Taycoon®</h3>
                 </div>
                 <span>{t('homePage.company.heading')} </span>
+            <Svg className = {style.svg}/>
             </div>
         </div>
     )

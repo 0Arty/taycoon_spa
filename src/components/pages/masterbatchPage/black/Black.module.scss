@@ -15,7 +15,10 @@
         /* 28px */
         letter-spacing: 0.4px;
     }
-
+    .abbstractSVG{
+        position: absolute;
+        top: 300px;
+    }
 }
 @media screen and (max-width: 1060px){
     .box{

@@ -4,26 +4,29 @@ import { forwardRef } from "react";
 import TextBlock from "./textBlock/TextBlock";
 import TableBlock from "./tableBlock/TableBlock";
 import ImageBlock from "../imageBlock/ImageBlock";
+import { useTranslation } from "react-i18next";
+import {ReactComponent as AbstractSVG} from '../../../../assets/Vector.svg'
 
-const White = ({ }, ref) => {
+const White = ({ props }, ref) => {
+
+  const { t } = useTranslation()
 
   return (
 
     <div className={style.box} ref={ref}>
-      {/* <img src={WhiteIMG} alt="asd" className={style.image} id='White'/> */}
-      <ImageBlock image={WhiteIMG} text={'Білі барвники для полімерів'} paragraph={'Поліетиленовий суперконцетрат для виробництва плівок, ливарних та екструзійних виробів.'}/>
-      <TextBlock />
+      <ImageBlock
+        image={WhiteIMG}
+        text={t('masterbatchPage.white.heading')}
+        paragraph={t('masterbatchPage.white.subheading')} />
+      <TextBlock t = {t}/>
       <TableBlock />
-      <p className={style.addition}>(*) Випробування виконані згідно з методами випробувань Cabot,
-        які ґрунтуються на міжнародних стандартах. Зазначені результати випробувань не повинні використовуватися як специфікації,
-        це типові значення, наведені для інформації.
+      <p className={style.addition}>
+        {t('masterbatchPage.white.text')}
       </p>
       <p className={style.conclusion}>
-        Для додавання PLASWITE® PE7024 до пластмаси рекомендується використовувати автоматичні дозатори. 
-        Це може бути виконано або безпосередньо перед виробництвом, або перед попереднім замішуванням пластмаси.
-         Кількість суперконцентрату, яку слід додавати, залежить від конкретних вимог щодо кінцевого продукту. 
-         Зазвичай стандартний рівень додавання барвника коливається від 1% до 5%, але це може бути налаштовано відповідно до потреб конкретного проекту чи виробника
+        {t('masterbatchPage.white.conclusion')}
       </p>
+        <AbstractSVG className = {style.abbstractSVG}/> 
     </div>
   )
 };

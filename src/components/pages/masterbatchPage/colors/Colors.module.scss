@@ -1,6 +1,49 @@
-.box{
+.box {
     min-height: 500px;
     width: 1060px;
     margin: 100px auto 0;
     position: relative;
+
+    .paragraph {
+        color: var(--darkgreen, #06413F);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        /* 28px */
+        letter-spacing: 0.4px;
+    }
+
+    .paragraph1 {
+        margin-top: 30px;
+    }
+
+    .paragraph2 {
+        margin-top: 10px;
+    }
+    .AbstractSVG{
+        position: absolute;
+        top: -200px;
+    }
+
+}
+
+@media screen and (max-width: 1060px) {
+    .box {
+        width: 100%;
+
+        .paragraph {
+            margin: 20px 10px 0px 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .box {
+        .paragraph {
+            font-size: 16px;
+        }
+    }
 }

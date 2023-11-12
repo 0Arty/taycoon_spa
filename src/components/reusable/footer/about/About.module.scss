@@ -1,0 +1,34 @@
+.box {
+    margin: 10px;
+    :not(:last-child){
+        margin-bottom: 20px;
+    }
+    h5 {
+        color: var(--white, #FFF);
+        text-align: center;
+
+        /* 20 */
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        /* 28px */
+        letter-spacing: 0.4px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .box{
+        width: calc( 100% - 50% - 40px);
+        h5{
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+}
+@media screen and (max-width: 400px){
+    .box{
+        width: 60%;
+    }
+}

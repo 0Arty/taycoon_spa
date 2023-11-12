@@ -1,5 +1,4 @@
 import style from "./ImageBlock.module.scss"
-import Img from '../../../../assets/masterbatchpage/white.jpg'
 
 const ImageBlock = ({ image, text, paragraph }) => {
 

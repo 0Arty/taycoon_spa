@@ -1,4 +1,6 @@
 .box {
+    
+
     .wrapper {
         min-height: 100px;
         width: 1060px;
@@ -6,6 +8,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
 
         .heading {
             display: flex;
@@ -39,7 +42,14 @@
             font-weight: 400;
             line-height: normal;
         }
+        .svg {
+            position: absolute;
+            top: 0px;
+            z-index: -1;
+        }
     }
+
+    
 }
 
 @media screen and (max-width: 1060px) {
@@ -49,21 +59,22 @@
         }
     }
 }
+
 @media screen and (max-width: 625px) {
     .box {
         .wrapper {
             .heading {
-    
+
                 .svg_logo {
                     width: calc(80px / 1.5);
                     height: calc(68.34px/ 1.5);
                 }
-    
+
                 h3 {
                     font-size: 48px;
                 }
             }
-    
+
             span {
                 font-size: 18px;
             }

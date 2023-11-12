@@ -1,11 +1,12 @@
 import style from "./TextBlock.module.scss"
 
-const TextBlock = ({ props }) => {
+const TextBlock = ({ t }) => {
 
+    // const {t} = usetranslate()
     return (
         <div className={style.textBlock}>
-            <p> – це високонаповнений білий суперконцентрат розроблений для наповнення високоякісних плівок ливарних та екструзійних виробів </p>
-            <p> Підходить для застосування у пластмасових виробах що контактують із продуктами харчування</p>
+            <p> {t('masterbatchPage.white.p1')} </p>
+            <p> {t('masterbatchPage.white.p2')} </p>
         </div>
     )
 };

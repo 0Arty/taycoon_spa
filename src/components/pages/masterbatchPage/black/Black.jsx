@@ -3,14 +3,19 @@ import style from "./Black.module.scss"
 import Img from '../../../../assets/masterbatchpage/dark.jpg'
 import Table from "./tableBlock/Table";
 import { forwardRef } from "react";
+import { useTranslation } from "react-i18next";
+import {ReactComponent as AbstractSVG} from '../../../../assets/Vector.svg'
+
 const Black = ({props}, ref) => {
+
+  const {t} = useTranslation()
 
   return (
     <div className = {style.box} ref={ref}>
-        <ImageBlock image={Img} text={'Чорні барвники для полімерів'} paragraph={'Поліолефінова група'}/>
-        <p className = {style.subtext}> Чорний барвник - концентрат чорного пігменту в полімерній матриці з різним відсотковим вмістом пігменту від 20% до 50% (дрібнодисперсної сажі)</p>
-        <Table />
-    
+        <ImageBlock image={Img} text={t('masterbatchPage.black.heading')} paragraph={t('masterbatchPage.black.subheading')}/>
+        <p className = {style.subtext}>{t('masterbatchPage.black.p1')}</p>
+        <Table text={t('masterbatchPage.black.table.download')}/>
+        <AbstractSVG className = {style.abbstractSVG}/> 
     </div>
   )
 };
