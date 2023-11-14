@@ -7,10 +7,16 @@ const Footer = ({ props }) => {
 
     return (
         <div className={style.box}>
-            <div className={style.wrapper}>
-                <Links />
-                <Info />
-                <About />
+            <div className={style.content}>
+                <div className={style.wrapper}>
+                    <Links />
+                    <Info />
+                    <About />
+
+                </div>
+                <div className={style.copyright}>
+                    <span>© 2019 - {new Date().getFullYear()} taycoon.com.ua</span>
+                </div>
             </div>
         </div>
     )

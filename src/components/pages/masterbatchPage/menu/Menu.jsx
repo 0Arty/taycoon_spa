@@ -11,9 +11,9 @@ const Menu = ({ toWhite, toBlack, toColors }) => {
                     <BackArrow /> 
                 </div> */}
                 <div className = {style.btns}>
+                    <button onClick={toColors}>{t('masterbatchPage.menu.colors')}</button>
                     <button onClick={toWhite}>{t('masterbatchPage.menu.white')}</button>
                     <button onClick={toBlack}>{t('masterbatchPage.menu.black')}</button>
-                    <button onClick={toColors}>{t('masterbatchPage.menu.colors')}</button>
                 </div>
         </div>
     )
