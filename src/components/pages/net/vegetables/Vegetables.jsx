@@ -1,13 +1,14 @@
 import style from "./Vegetables.module.scss"
 import net from '../../../../assets/net/net.svg'
 import { useTranslation } from "react-i18next";
+import { forwardRef } from "react";
 
-const Vegetables = ({ props }) => {
+const Vegetables = ({ props }, ref) => {
 
     const { t } = useTranslation()
 
     return (
-        <div className={style.box}>
+        <div className={style.box} ref={ref}>
             <div className={style.image}>
                 <img src={net} alt="пакувальна сітка для овочів та фруктів" />
             </div>
@@ -23,4 +24,4 @@ const Vegetables = ({ props }) => {
     )
 };
 
-export default Vegetables;
+export default forwardRef(Vegetables);

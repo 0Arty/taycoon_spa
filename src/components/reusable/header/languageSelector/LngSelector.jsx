@@ -24,7 +24,6 @@ const LngSelector = ({ props }) => {
                             onClick={() => { i18next.changeLanguage(LOCALS.UK) }}
                         > uk</div>}
 
-
                     {(i18n.language !== LOCALS.EN) &&
                         <div
                             className={classNames(style.lng, { [style.animate]: isOpen })}

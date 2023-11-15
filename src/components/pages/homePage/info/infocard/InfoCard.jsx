@@ -4,7 +4,7 @@ const InfoCard = ({ title, info, onClick, readMore }) => {
 
     return (
         <div className={style.shadow}
-            onClick={() => { onClick() }}
+            onClick={onClick}
         >
             <div className={style.card}>
                 <div className={style.heading}>

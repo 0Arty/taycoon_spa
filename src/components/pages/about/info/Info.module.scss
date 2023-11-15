@@ -1,0 +1,12 @@
+.box {
+    width: 1060px;
+    margin: 0 auto;
+    min-height: 600px;
+}
+
+@media screen and (max-width: 1060px) {
+    .box {
+        width: 100%;
+        padding: 0 20px;
+    }
+}

@@ -1,6 +1,10 @@
 import style from "./AnimatedMenu.module.scss"
-import { motion, AnimatePresence } from "framer-motion";
+
 import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import { routes } from "../../../../routes";
+
 import LngSelector from "../languageSelector/LngSelector";
 
 const AnimatedMenu = ({ isOpen }) => {
@@ -19,6 +23,7 @@ const AnimatedMenu = ({ isOpen }) => {
             opacity: 0,
         }
     }
+    const { t } = useTranslation()
 
     return (
         <AnimatePresence >
@@ -32,12 +37,34 @@ const AnimatedMenu = ({ isOpen }) => {
                     transition={{ duration: 0.5 }}
                 >
                     <ul >
-                        <li><Link className={style.link}>Продукція</Link></li>
-                        <li><Link className={style.link}>Про компанію</Link></li>
-                        <li><Link className={style.link}>Сертифікати</Link></li>
-                        <li><Link className={style.link}>Клієнти</Link></li>
-                        <li><Link className={style.link}>Контаки</Link></li>
-                        <li><LngSelector /></li>
+                        <li>
+                            <Link className={style.link} to={routes.MAIN}>
+                                {t("header.product")}
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className={style.link} to={routes.ABOUT}>
+                                {t("header.aboutCompany")}
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className={style.link} to={routes.CERTIFICATES}>
+                                {t("header.certificats")}
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className={style.link} to={routes.CLIENTS}>
+                                {t("header.clients")}
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className={style.link}
+                            >
+                                {t("header.contacts")}
+                            </Link>
+                        </li>
+                        <li>
+                            <LngSelector /></li>
                     </ul>
                 </motion.div>)}
         </AnimatePresence>

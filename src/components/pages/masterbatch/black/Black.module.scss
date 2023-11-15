@@ -1,0 +1,28 @@
+.box {
+    min-height: 500px;
+    width: 1060px;
+    margin: 100px auto 0;
+    position: relative;
+    scroll-margin: 55px;
+    .subtext {
+        margin-top: 25px;
+        color: var(--darkgreen, #06413F);
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        /* 28px */
+        letter-spacing: 0.4px;
+    }
+    .abbstractSVG{
+        position: absolute;
+        top: 300px;
+        z-index: -10;
+    }
+}
+@media screen and (max-width: 1060px){
+    .box{
+        width: 100%;
+    }
+}

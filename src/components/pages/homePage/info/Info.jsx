@@ -1,12 +1,17 @@
 import { useTranslation } from "react-i18next";
 import style from "./Info.module.scss"
 import InfoCard from "./infocard/InfoCard";
+import { useNavigate } from "react-router-dom";
+import { routes } from "../../../../routes";
 
 const Info = ({ props }) => {
 
-
-    const handlerLink = () => { }
+    const navigate = useNavigate()
     const { t } = useTranslation()
+
+    const goToAbout = () => navigate(routes.ABOUT)
+    const goToCertificates = () => navigate(routes.CERTIFICATES)
+    const goToClients = () => navigate(routes.CLIENTS)
 
     return (
         <div className={style.box}>
@@ -17,18 +22,18 @@ const Info = ({ props }) => {
                     title={t('homePage.info.cards.company')}
                     info={t('homePage.info.cards.company subtitle')}
                     readMore={t('homePage.info.cards.more')}
-                    onClick={handlerLink}
+                    onClick={goToAbout}
                 />
                 <InfoCard
                     title={t('homePage.info.cards.certificates')}
                     readMore={t('homePage.info.cards.company')}
-                    onClick={handlerLink}
+                    onClick={goToCertificates}
                 />
                 <InfoCard
                     title={t('homePage.info.cards.our clients')}
                     info={t('homePage.info.cards.client list')}
                     readMore={t('homePage.info.cards.company')}
-                    onClick={handlerLink}
+                    onClick={goToClients}
                 />
             </div>
         </div>

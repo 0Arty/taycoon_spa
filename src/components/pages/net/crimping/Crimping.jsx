@@ -1,25 +1,26 @@
 import style from "./Crimping.module.scss"
 import image from '../../../../assets/net/crimping.svg'
 import { useTranslation } from "react-i18next";
+import { forwardRef } from "react";
 
 
-const Crimping = ({ props }) => {
+const Crimping = ({ props }, ref) => {
     const { t } = useTranslation()
 
     return (
-        <div className={style.box}>
+        <div className={style.box} ref={ref}>
             <div className={style.text}>
                 <h4>{t('netPage.crimping.heading')}</h4>
 
                 <div className={style.paragraph}>
                     <p>{t('netPage.crimping.characteristics.text')}</p>
                     <div className={style.table}>
-                        <div className = {style.left}>
+                        <div className={style.left}>
                             <p>{t('netPage.crimping.characteristics.char1')}</p>
                             <p>{t('netPage.crimping.characteristics.char2')}</p>
 
                         </div>
-                        <div className = {style.right}>
+                        <div className={style.right}>
                             <p>{t('netPage.crimping.characteristics.char3')}</p>
                             <p>{t('netPage.crimping.characteristics.char4')}</p>
 
@@ -37,4 +38,4 @@ const Crimping = ({ props }) => {
     )
 };
 
-export default Crimping;
+export default forwardRef(Crimping);

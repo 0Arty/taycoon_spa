@@ -1,0 +1,49 @@
+.box {
+    min-height: 1500px;
+    width: 1060px;
+    margin: 100px auto 0;
+    position: relative;
+    scroll-margin: 55px;
+    .addition {
+        margin-top: 20px;
+        padding: 0 10px 0 10px;
+        color: #032423;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .conclusion {
+        margin-top: 65px;
+        color: var(--darkgreen, #06413F);
+        text-align: justify;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        letter-spacing: 0.4px;
+    }
+    .abbstractSVG{
+        position: absolute;
+        top: 400px;
+        z-index: -10;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .box {
+        width: 100%;
+
+        .conclusion {
+            margin: 65px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .box {
+        .conclusion {
+            font-size: 16px;
+        }
+    }
+}

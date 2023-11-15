@@ -4,6 +4,9 @@ export const routes = {
     ADDITIVES : "/additives",
     COMPOSITES : "/composites",
     MAIN: "/",
+    ABOUT: '/about',
+    CERTIFICATES : '/certificates',
+    CLIENTS: '/clients'
     
 
 }

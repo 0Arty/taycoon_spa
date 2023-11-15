@@ -1,13 +1,14 @@
 import style from "./Glass.module.scss"
 import image from '../../../../assets/net/glass.svg'
 import { useTranslation } from "react-i18next";
+import { forwardRef } from "react";
 
-const Glass = ({ props }) => {
+const Glass = ({ props }, ref) => {
 
     const { t } = useTranslation()
 
     return (
-        <div className={style.box}>
+        <div className={style.box} ref={ref}>
 
             <div className={style.text}>
                 <h4>{t('netPage.glass.heading')}</h4>
@@ -24,4 +25,4 @@ const Glass = ({ props }) => {
     )
 };
 
-export default Glass;
+export default forwardRef(Glass) ;

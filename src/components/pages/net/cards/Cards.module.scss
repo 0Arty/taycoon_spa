@@ -1,0 +1,108 @@
+.box {
+    margin-top: 100px;
+    width: 100%;
+    min-height: 600px;
+    background: linear-gradient(0deg, #06413F 0%, rgba(31, 83, 81, 0.88) 28.71%, rgba(217, 217, 217, 0.00) 99.86%);
+    position: relative;
+
+    .wrapper {
+        width: 1060px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        h4 {
+            margin-top: 20px;
+            color: var(--darkgreen, #06413F);
+            text-align: center;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%;
+            /* 36px */
+            text-decoration-line: underline;
+        }
+
+        .container {
+            width: 100%;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .svg1 {
+            position: absolute;
+            z-index: -10;
+            right: -300px;
+            top: 100px;
+        }
+
+        .svg2 {
+            position: absolute;
+            z-index: -10;
+            left: -300px;
+        }
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .box {
+        .wrapper {
+            width: 100%;
+            padding: 0 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .box {
+        .wrapper {
+            .container{
+                gap: 20px;
+                justify-content: center;
+
+            }
+            .svg1 {
+                position: absolute;
+                z-index: -10;
+                right: -300px;
+                top: 00px;
+                scale: 0.8;
+            }
+    
+            .svg2 {
+                position: absolute;
+                z-index: -10;
+                left: -300px;
+                top: 180px;
+                scale: 0.8;
+            }
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    .box {
+        .wrapper {
+            .container{
+                gap: 20px;
+                justify-content: center;
+
+            }
+            .svg1 {
+                position: absolute;
+                z-index: -10;
+                right: -300px;
+                top: 00px;
+            }
+    
+            .svg2 {
+                position: absolute;
+                z-index: -10;
+                left: -300px;
+                top: 500px;
+            }
+        }
+    }
+}

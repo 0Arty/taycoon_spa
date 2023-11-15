@@ -10,9 +10,9 @@ const Products = ({ props }) => {
     const { t } = useTranslation()
     const navigate = useNavigate()
     const goToMasterbatchHandler = (e) => { navigate(routes.MASTERBATCH) }
-     const goToNetHandler = (e) => {navigate(routes.PACKING_NET)}
-    // const goToAdditionhHandler = (e) => {navigate('/net')}
-    // const goToCompositesHandler = (e) => {navigate('/composites')}
+    const goToNetHandler = (e) => { navigate(routes.PACKING_NET) }
+    const goToAdditionhHandler = (e) => { navigate(routes.ADDITIVES) }
+    const goToCompositesHandler = (e) => { navigate(routes.COMPOSITES) }
 
 
     return (
@@ -28,7 +28,7 @@ const Products = ({ props }) => {
                     </h2>
                 </Link>
             </div>
-            <div onClick={(e)=>{goToNetHandler(e)}}
+            <div onClick={(e) => { goToNetHandler(e) }}
                 className={classNames(style.element, style.net)}
             >
                 <Link className={style.link}
@@ -52,11 +52,12 @@ const Products = ({ props }) => {
             </div>
             <div
                 className={classNames(style.element, style.composites)}
+                onClick={goToCompositesHandler}
             >
                 <Link
                     className={style.link}
                     to={routes.COMPOSITES}
-                    >
+                >
                     <h2>
                         {t('homePage.products.composites')}
                     </h2>
