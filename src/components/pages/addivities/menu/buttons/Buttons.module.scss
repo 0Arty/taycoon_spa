@@ -1,0 +1,32 @@
+.btns {
+    position: absolute;
+    width: 1060px;
+    min-height: 10px;
+
+    bottom: 150px;
+    display: flex;
+    justify-content: center;
+
+    button {
+        width: 25%;
+        outline: none;
+
+        border: 0;
+        background: transparent;
+        text-align: center;
+        color: var(--white, #FFF);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        transition: 0.3s;
+
+        &:hover {
+            text-decoration-line: underline;
+            color: #FAC149;
+            scale: 1.1;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    }
+}

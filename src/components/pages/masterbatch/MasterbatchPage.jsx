@@ -1,6 +1,6 @@
 import style from "./MasterbatchPage.module.scss"
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 import Menu from "./menu/Menu";
@@ -12,23 +12,20 @@ import Footer from "../../reusable/footer/Footer";
 
 const MasterbatchPage = ({ props }) => {
 
+  const { t } = useTranslation()
+
+  const refPage = useRef(null)
   const refWhite = useRef(null)
   const refBlack = useRef(null)
   const refColors = useRef(null)
 
-  const toWhite = () => {
-    refWhite.current?.scrollIntoView({block:'start', behavior: 'smooth' })
-  }
-  const toBlack = () => {
-    refBlack.current?.scrollIntoView({block:'start', behavior: 'smooth' })
-  }
-  const toColors = () => {
-    refColors.current?.scrollIntoView({block:'start', behavior: 'smooth' })
-  }
+  const toWhite = () => refWhite.current?.scrollIntoView({ block: 'start', behavior: 'smooth' })
+  const toBlack = () => refBlack.current?.scrollIntoView({ block: 'start', behavior: 'smooth' })
+  const toColors = () => refColors.current?.scrollIntoView({ block: 'start', behavior: 'smooth' })
+  useEffect(() => refPage.current?.scrollIntoView({ block: 'start', behavior: 'smooth' }), [])
 
-  const { t } = useTranslation()
   return (
-    <div className={style.MasterbatchPage}>
+    <div className={style.MasterbatchPage} ref={refPage}>
       <Menu toWhite={toWhite} toBlack={toBlack} toColors={toColors} />
       <Colors ref={refColors} />
       <White ref={refWhite} />

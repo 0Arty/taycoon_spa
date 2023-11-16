@@ -10,7 +10,7 @@ import AnimatedMenu from "./animatedMenu/AnimatedMenu";
 import { useTranslation } from "react-i18next";
 import { routes } from "../../../routes";
 
-const Header = ({ props }) => {
+const Header = ({ toContact }) => {
 
     const isOpen = useSelector((state) => state.headerSlice.isOpen)
     const { t } = useTranslation()
@@ -53,7 +53,7 @@ const Header = ({ props }) => {
                             </Link>
                         </li>
                         <li
-                        ><Link className={style.link} >
+                        ><Link className={style.link} onClick={toContact} to={routes.MAIN}>
                                 {t("header.contacts")}
                             </Link>
                         </li>

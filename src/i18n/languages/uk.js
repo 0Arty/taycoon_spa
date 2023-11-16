@@ -16,7 +16,7 @@ export const uk = {
     addPage: addivities,
     compositesPage: composites,
     aboutPage : about,
-    
+   
     "": "",
 }
 

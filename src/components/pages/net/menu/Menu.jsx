@@ -20,7 +20,7 @@ const Menu = ({ transition }) => {
                     <button onClick={toVegetable}>
                         {t('netPage.buttons.vegetables')}
                     </button>
-                    <button onClick={toCrimping}> 
+                    <button onClick={toCrimping}>
                         {t('netPage.buttons.crimping')}
                     </button>
                     <button onClick={toToys}>
