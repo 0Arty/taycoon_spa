@@ -5,21 +5,6 @@
     position: relative;
     margin-top: 55px;
 
-    .image {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        overflow-y: hidden;
-
-        img {
-
-            width: 100%;
-            height: calc(100%);
-            object-fit: cover;
-        }
-
-    }
-
     .content {
         position: relative;
         width: 100%;
@@ -31,6 +16,7 @@
         position: relative;
 
         h3 {
+            margin-top: -40px;
             color: var(--white, #FFF);
             text-align: center;
             font-size: 70px;
@@ -64,7 +50,7 @@
                 top: 35%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                font-size: 48px;
+                font-size: 36px;
             }
 
         }

@@ -1,21 +1,19 @@
 import style from "./Header.module.scss"
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 
-import { ReactComponent as Logo } from "../../../assets/header/Logo.svg"
-
+import { routes } from "../../../routes";
 import LngSelector from "./languageSelector/LngSelector";
 import MenuBtn from "./menuBtn/MenuBtn";
 import AnimatedMenu from "./animatedMenu/AnimatedMenu";
-import { useTranslation } from "react-i18next";
-import { routes } from "../../../routes";
+import { ReactComponent as Logo } from "../../../assets/header/Logo.svg"
 
 const Header = ({ toContact }) => {
 
     const isOpen = useSelector((state) => state.headerSlice.isOpen)
     const { t } = useTranslation()
     const navigate = useNavigate()
-    const dispatch = useDispatch()
     
     const goToMainHandler = () => {
         navigate('/')

@@ -12,15 +12,14 @@ const Buttons = ({ refs, toHandle }) => {
 
     return (
         <div className={style.btns}>
-            <div>
-                {
-                    addivitiesArray.map(
-                        (add, index) => <button
-                            onClick={() => toHandle(refsArray[index])}
-                        > {t(`addPage.buttons.${index}`)}</button>
-                    )
-                }
-            </div>
+            {
+                addivitiesArray.map(
+                    (add, index) => <button
+                        onClick={() => toHandle(refsArray[index])}
+                        key={add.name}
+                    > {t(`addPage.buttons.${index}`)}</button>
+                )
+            }
         </div>
     )
 };

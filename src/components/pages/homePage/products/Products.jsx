@@ -41,6 +41,7 @@ const Products = ({ props }) => {
             </div>
             <div
                 className={classNames(style.element, style.addivities)}
+                onClick={(e)=>{goToAdditionhHandler(e)}}
             >
                 <Link className={style.link}
                     to={routes.ADDITIVES}
