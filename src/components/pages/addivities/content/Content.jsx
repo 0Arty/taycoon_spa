@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import style from "./Content.module.scss"
 import Block from "./block/Block";
 import { useTranslation } from "react-i18next";
+import { useMemo } from "react";
 
 const Content = ({ refs }) => {
 

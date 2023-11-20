@@ -23,25 +23,25 @@ const Table = ({ article, t }) => {
                     {table?.meltFlow &&
                         <tr>
                             <td>{t('addPage.popUp.table.meltFlow')}</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
+                            <td>{t(`addPage.${article}.meltFlow.method`)}</td>
+                            <td>{t(`addPage.${article}.meltFlow.units`)}</td>
+                            <td>{t(`addPage.${article}.meltFlow.value`)}</td>
                         </tr>
                     }
                     {table?.destinity &&
                         <tr>
                             <td>{t('addPage.popUp.table.destinity')}</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{t(`addPage.${article}.destinity.method`)}</td>
+                            <td>{t(`addPage.${article}.destinity.units`)}</td>
+                            <td>{t(`addPage.${article}.destinity.value`)}</td>
                         </tr>
                     }
                     {table?.heatResistanse &&
                         <tr>
                             <td>{t('addPage.popUp.table.heatResistanse')}</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{t(`addPage.${article}.heatResistanse.method`)}</td>
+                            <td>{t(`addPage.${article}.heatResistanse.units`)}</td>
+                            <td>{t(`addPage.${article}.heatResistanse.value`)}</td>
                         </tr>
                     }
                     {table?.foodContact &&
@@ -49,7 +49,7 @@ const Table = ({ article, t }) => {
                             <td>{t('addPage.popUp.table.foodContact')}</td>
                             <td></td>
                             <td></td>
-                            <td></td>
+                            <td>+</td>
                         </tr>
                     }
 
@@ -57,7 +57,7 @@ const Table = ({ article, t }) => {
                         <td>{t('addPage.popUp.table.polymer carrier')}</td>
                         <td></td>
                         <td></td>
-                        <td></td>
+                        <td>{t(`addPage.${article}.polymer`)}</td>
                     </tr>
                 </tbody>
             </table>
