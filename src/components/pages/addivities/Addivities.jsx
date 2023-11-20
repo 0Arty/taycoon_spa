@@ -3,7 +3,6 @@ import style from "./Addivities.module.scss"
 import Menu from "./menu/Menu";
 import Content from "./content/Content";
 import PopUp from "./popUp/PopUp";
-import { useSelector } from "react-redux";
 
 const Addivities = ({ props }) => {
 
@@ -19,18 +18,14 @@ const Addivities = ({ props }) => {
   const refs = { refBlock, refStatic, refUV, refOxi, refProc, refOpti, refClean, refFoam }
 
   useEffect(() => refPage.current?.scrollIntoView({ block: 'start', behavior: 'smooth' }), [])
-  const popUpIsOpen = useSelector(store => store.addivitiesSlice.popUp.isOpen)
-  
   const toHandle = (ref) => ref.current?.scrollIntoView({ block: 'center', behavior: 'smooth' })
 
   return (
     <div className={style.box} ref={refPage}>
       <Menu refs={refs} toHandle={toHandle} />
       <Content refs={refs} />
-          {
-           popUpIsOpen && <PopUp />
-          }
-            
+      <PopUp />
+
     </div>
   )
 };

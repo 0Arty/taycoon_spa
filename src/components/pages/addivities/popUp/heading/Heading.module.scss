@@ -1,0 +1,43 @@
+.heading {
+    margin-top: 25px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h5 {
+        color: var(--darkgreen, #06413F);
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        right: 35px;
+        color: var(--darkgreen, #06413F);
+        font-size: 40px;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+        transition: .3s;
+        &:hover{
+            scale: 1.1;
+            color: #FAC149;
+            transition: .3s;
+            cursor: pointer;
+
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .heading{
+        h5{
+            font-size: 24px;
+        }
+        button{
+            font-size: 28px;
+        }
+    }
+}

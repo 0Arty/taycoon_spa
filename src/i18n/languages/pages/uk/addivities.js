@@ -11,140 +11,105 @@ export const addivities = {
         "7": "Вспінюючі добавки"
     },
     "PE 0600 F": {
+        "heading" : "Антиблок",
         "short": "Застосовується при виробництві плівок",
-        "viscosity index ": "",
-        "method": "",
-        "usage": "",
-        "dosage": "",
-        "saving": "",
+
     },
     "PE 0601 F": {
+        "heading" : "Антиблок",
         "short": "Застосовується при виробництві плівок",
-        "viscosity index ": "",
-        "method": "",
-        "usage": "",
-        "dosage": "",
-        "saving": "",
+
     },
     "PE 0602 F": {
+        "heading" : "Антиблок",
         "short": "Застосовується при виробництві плівок",
-        "viscosity index ": "",
-        "method": "",
-        "usage": "",
-        "dosage": "",
-        "saving": "",
+
     },
     "PE 0301 F": {
+        "heading" : "Антистатик",
         "short": "Застосовується для зниження статичного заряду",
-        "viscosity index ": "",
-        "method": "",
-        "usage": "",
-        "dosage": "",
-        "saving": "",
+
     },
     "PE 0317 F": {
+        "heading" : "Антистатик",
         "short": "Застосовується для зниження статичного заряду",
-        "viscosity index ": "",
-        "method": "",
-        "usage": "",
-        "dosage": "",
-        "saving": "",
+
     },
     "PE 0021 F": {
+        "heading" : "УФ-стабілізатор",
         "short": "Застосовується для регулювання коеф. тертя",
-        "viscosity index ": "",
-        "method": "",
-        "usage": "",
-        "dosage": "",
-        "saving": "",
+
     },
     "PE 0040 F": {
+        "heading" : "УФ-стабілізатор",
         "short": "Застсовується при виробництві плівок",
-        "viscosity index ": "",
-        "method": "",
-        "usage": "",
-        "dosage": "",
-        "saving": "",
+
     },
     "PE 0029 F": {
+        "heading" : "УФ-стабілізатор",
         "short": "Застосовується для регулювання коеф. тертя",
-        "viscosity index ": "",
-        "method": "",
-        "usage": "",
-        "dosage": "",
-        "saving": "",
+
     },
     "PE 0051 F": {
+        "heading" : "УФ-стабілізатор",
         "short": "Застсовується при виробництві плівок",
-        "viscosity index ": "",
-        "method": "",
-        "usage": "",
-        "dosage": "",
-        "saving": "",
+
     },
     "PE 0802 F": {
+        "heading" : "Антиоксидант",
         "short": "Знижує окислювальну та термоокислювальної деструкції полімеру",
-        "viscosity index ": "",
-        "method": "",
-        "usage": "",
-        "dosage": "",
-        "saving": "",
+
     },
     "PE 0421 F": {
+        "heading" : "Процесинг",
         "short": "Призначений для збільшення ефективності процеса екструзії",
-        "viscosity index ": "",
-        "method": "",
-        "usage": "",
-        "dosage": "",
-        "saving": "",
+
     },
     "PE 0422 F": {
+        "heading" : "Процесинг",
         "short": "Призначений для збільшення ефективності процеса екструзії",
-        "viscosity index ": "",
-        "method": "",
-        "usage": "",
-        "dosage": "",
-        "saving": "",
+
     },
     "PE 0424 F": {
+        "heading" : "Процесинг",
         "short": "Призначений для збільшення ефективності процеса екструзії",
-        "viscosity index ": "",
-        "method": "",
-        "usage": "",
-        "dosage": "",
-        "saving": "",
+
     },
     "PE 0103 F": {
+        "heading" : "Оптичний відбілювач",
         "short": "Підвищує стійкість до руйнівного дії УФ",
-        "viscosity index ": "",
-        "method": "",
-        "usage": "",
-        "dosage": "",
-        "saving": "",
+
     },
     "PE 0101 F": {
+        "heading" : "Чистяча добавка",
         "short": "Застосовується при очищенні робочих елементів в екструзійному і литтєвому обладнанні",
-        "viscosity index ": "",
-        "method": "",
-        "usage": "",
-        "dosage": "",
-        "saving": "",
+
     },
     "PE 0706 F": {
+        "heading" : "Вспінююча добавка",
         "short": "Застосовується для отримання вспіненних і \"підвспіненних\" полімерних виробів",
-        "viscosity index ": "",
-        "method": "",
-        "usage": "",
-        "dosage": "",
-        "saving": "",
+
     },
     popUp: {
         "article": "Артикул: ",
         "viscosity index ": "Індекс дягучості(полімерносій):",
-        "method": "Метод випробування:",
+        "method": "Метод випробування:",    
         "usage": "Застосування:",
         "dosage": "Дозування: ",
         "saving": "Зберігання:",
+        table: {
+            "properties":"Властивості",
+            "testMethods":"Метод випробувань",
+            "units":" Одиниці виміру",
+            "value":"Значення",
+
+            "meltFlow":"Показник плинності розплаву (ППР)",
+            "destinity":"Густина",
+            "heatResistanse":"Термостійкість",
+            "polymer carrier":"Полімерний носій",
+            "foodContact":"Контакт з харчовими продуктами",
+        }
     },
 
-}
+
+}                

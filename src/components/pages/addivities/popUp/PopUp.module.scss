@@ -1,13 +1,26 @@
-.background{
+.background {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 55px);
     position: absolute;
-    backdrop-filter: blur(2.5px);
-    background-color: rgba(6, 65, 63, 0.80);
-    top: 0;
-    .container{
-        width: 600px;
-        min-height: 800px;
+    top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    .container {
+        margin: 20px 0 20px 0;
+        cursor:auto;
+        overflow-y: auto;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        max-width: 600px;
+        height: calc(100vh - 55px - 20px - 20px );
+        max-height: 800px;
+        width: 95vw;
+        background-color: white;
     }
 
 }
