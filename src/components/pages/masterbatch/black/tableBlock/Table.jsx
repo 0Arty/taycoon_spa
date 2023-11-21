@@ -1,14 +1,15 @@
-import "./Table.module.scss"
+import  style from "./Table.module.scss"
 import { ReactComponent as PDFLogo } from "../../../../../assets/masterbatchpage/pdfs/pdfLogo.svg";
 import pdf2727 from '../../../../../assets/masterbatchpage/pdfs/2727.pdf'
 import pdf2824 from '../../../../../assets/masterbatchpage/pdfs/2727.pdf'
 import pdf4637 from '../../../../../assets/masterbatchpage/pdfs/2727.pdf'
 import pdf6281 from '../../../../../assets/masterbatchpage/pdfs/2727.pdf'
 
+
 const Table = ({ text }) => {
 
     return (
-        <table>
+        <table className = {style.table}>
             <tbody>
                 <tr>
                     <td>PLASBLAK PE2727</td>

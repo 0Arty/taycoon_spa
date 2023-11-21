@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
-import "./TableBlock.module.scss"
+import style from "./TableBlock.module.scss"
 
 const TableBlock = ({ props }) => {
 
     const {t} = useTranslation()
     return (
-        <table>
+        <table className = {style.table}>
             <tbody>
                 <tr>
                     <td>{t('masterbatchPage.white.table.11')}</td>

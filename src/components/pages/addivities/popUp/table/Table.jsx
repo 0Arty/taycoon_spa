@@ -10,10 +10,8 @@ const Table = ({ article, t, parameters }) => {
     // heatResistanse: true,
     // foodContact: true,
     return (
-        <div>
-
-            <table>
-                <tbody>
+            <table className = {style.table}>
+                <tbody >
                     <tr>
                         <td>{t('addPage.popUp.table.properties')}</td>
                         <td>{t('addPage.popUp.table.testMethods')}</td>
@@ -61,7 +59,6 @@ const Table = ({ article, t, parameters }) => {
                     </tr>
                 </tbody>
             </table>
-        </div>
     )
 };
 
