@@ -6,6 +6,8 @@ import { useTranslation } from "react-i18next";
 import { useRef } from "react";
 import Heading from "./heading/Heading";
 import Table from "./table/Table";
+import Article from "./article/Article";
+import Paragraph from "./paragraph/Paragraph";
 
 const PopUp = () => {
 
@@ -16,7 +18,7 @@ const PopUp = () => {
   const dispatch = useDispatch()
 
   const closePopUpHandler = () => { dispatch(closePopUp()) }
-
+  const parameters = useSelector(state => state.addivitiesSlice.popUp.parameters)
   const OutsideClick = (e) => {
     if (!blockRef.current) return;
     if (!blockRef.current.contains(e.target)) closePopUpHandler()
@@ -35,8 +37,8 @@ const PopUp = () => {
       opacity: 0,
     }
   }
-
   const { t } = useTranslation()
+  console.log('rerendering:')
   // if (!isOpen) return null
   return (
     <AnimatePresence >
@@ -51,9 +53,34 @@ const PopUp = () => {
       >
         <div className={style.container} ref={blockRef}>
           <Heading closeHandler={closePopUpHandler} article={article} t={t} />
-          <Table article={article} t={t} />
-
-          {article}
+          <Article article={article} />
+          <Table article={article} t={t} parameters={parameters} />
+          <Paragraph
+            article={article}
+            t={t}
+            heading={t('addPage.popUp.usage')}
+            paragraph={t(`addPage.${article}.paragraphs.usage`)}
+          />
+          <Paragraph
+            article={article}
+            t={t}
+            heading={t('addPage.popUp.dosage')}
+            paragraph={t(`addPage.${article}.paragraphs.dosage`)}
+          />
+          {parameters?.appearance &&
+            <Paragraph
+              article={article}
+              t={t}
+              heading={t('addPage.popUp.appearance')}
+              paragraph={t(`addPage.${article}.paragraphs.appearance`)}
+            />
+          }
+          <Paragraph
+            article={article}
+            t={t}
+            heading={t('addPage.popUp.saving')}
+            paragraph={t(`addPage.${article}.paragraphs.saving`)}
+          />
         </div>
       </motion.div>}
     </AnimatePresence>

@@ -1,5 +1,5 @@
 table {
-    margin: 50px 20px 0 20px;
+    margin: 20px 20px 0 20px;
     table-layout: fixed;
     width: calc(100% - 40px);
     border-spacing: 10px;
@@ -11,11 +11,13 @@ table {
     line-height: normal;
     background-color: #056461;
     border-radius: 20px;
-    
+    hyphens:auto;
     tbody {
         tr {
             background-color: transparent;
+            text-align: center;
             td {
+                padding: 0;
                 background-color: transparent;
                 min-height: 40px;
                 text-align: center;
@@ -41,3 +43,62 @@ table {
 
     }
 }
+@media screen and (max-width: 767px){
+    table{
+        margin-top: 20px;
+        border-spacing: 5px;
+        font-size: 14px;
+        tbody{
+            tr{
+                td{
+                    
+                    &:nth-child(1) {
+                        width: 30%;
+                    }
+    
+                    &:nth-child(2) {
+                        width: 30%;
+                    }
+    
+                    &:nth-child(3) {
+                        width: 20%;
+                    }
+                    
+                    &:nth-child(3) {
+                        width: 20%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    table{
+        border-spacing: 1px;
+        margin: 0;
+        margin-top: 20px;
+        width: 100%;
+        font-size: 12px;
+        font-weight: 300;
+        hyphens:auto;
+        td{
+            hyphens:auto;*
+            &:nth-child(1) {
+                width: 25%;
+            }
+
+            &:nth-child(2) {
+                width: 25%;
+            }
+
+            &:nth-child(3) {
+                width: 25%;
+            }
+            
+            &:nth-child(3) {
+                width: 25%;
+            }
+        }
+    }
+    }

@@ -1,9 +1,9 @@
 import { useSelector } from "react-redux";
 import style from "./Table.module.scss"
 
-const Table = ({ article, t }) => {
+const Table = ({ article, t, parameters }) => {
 
-    const table = useSelector(state => state.addivitiesSlice.popUp.table)
+    
 
     // meltFlow: true,
     // destinity: true, 
@@ -20,7 +20,7 @@ const Table = ({ article, t }) => {
                         <td>{t('addPage.popUp.table.units')}</td>
                         <td>{t('addPage.popUp.table.value')}</td>
                     </tr>
-                    {table?.meltFlow &&
+                    {parameters?.meltFlow &&
                         <tr>
                             <td>{t('addPage.popUp.table.meltFlow')}</td>
                             <td>{t(`addPage.${article}.meltFlow.method`)}</td>
@@ -28,7 +28,7 @@ const Table = ({ article, t }) => {
                             <td>{t(`addPage.${article}.meltFlow.value`)}</td>
                         </tr>
                     }
-                    {table?.destinity &&
+                    {parameters?.destinity &&
                         <tr>
                             <td>{t('addPage.popUp.table.destinity')}</td>
                             <td>{t(`addPage.${article}.destinity.method`)}</td>
@@ -36,7 +36,7 @@ const Table = ({ article, t }) => {
                             <td>{t(`addPage.${article}.destinity.value`)}</td>
                         </tr>
                     }
-                    {table?.heatResistanse &&
+                    {parameters?.heatResistanse &&
                         <tr>
                             <td>{t('addPage.popUp.table.heatResistanse')}</td>
                             <td>{t(`addPage.${article}.heatResistanse.method`)}</td>
@@ -44,7 +44,7 @@ const Table = ({ article, t }) => {
                             <td>{t(`addPage.${article}.heatResistanse.value`)}</td>
                         </tr>
                     }
-                    {table?.foodContact &&
+                    {parameters?.foodContact &&
                         <tr>
                             <td>{t('addPage.popUp.table.foodContact')}</td>
                             <td></td>

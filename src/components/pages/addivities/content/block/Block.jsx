@@ -15,7 +15,7 @@ const Block = ({ articleArray, heading}, ref) => {
                         heading={heading}
                         article={article.name}
                         paragraph={t(`addPage.${article.name}.short`)}
-                        table={article.table}
+                        parameters={article.parameters}
                         key={`${article}${index}`} />)
 
                 }

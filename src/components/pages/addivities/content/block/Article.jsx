@@ -2,11 +2,11 @@ import { useDispatch } from "react-redux";
 import style from "./Article.module.scss"
 import { openPopUp } from "../../../../../store/slices/addivitiesSlice";
 
-const Article = ({ article, paragraph, heading,table }) => {
+const Article = ({ article, paragraph, heading,parameters }) => {
 
     const dispatch = useDispatch()
     const openPopUP = () => {
-        dispatch(openPopUp({ name: heading, article,table }
+        dispatch(openPopUp({ name: heading, article,parameters }
         ))
     }
     

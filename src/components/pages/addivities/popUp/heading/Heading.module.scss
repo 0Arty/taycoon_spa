@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     h5 {
+        text-align: center;
         color: var(--darkgreen, #06413F);
         font-size: 36px;
         font-weight: 500;
@@ -34,10 +35,19 @@
 @media screen and (max-width: 600px){
     .heading{
         h5{
+            width: 80%;
             font-size: 24px;
         }
         button{
             font-size: 28px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px){
+    .heading{
+        h5{
+            width: 70%;
         }
     }
 }

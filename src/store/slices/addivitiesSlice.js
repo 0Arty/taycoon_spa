@@ -7,21 +7,22 @@ const initialState = {
             article: [
                 {
                     name: 'PE 0600 F',
-                    table: {
+                    parameters: {
                         meltFlow: true,
+
                     },
                 },
                 {
 
                     name: 'PE 0601 F',
-                    table: {
+                    parameters: {
                         meltFlow: true,
                     },
                 },
                 {
 
                     name: 'PE 0602 F',
-                    table: {
+                    parameters: {
                         meltFlow: true,
                     },
                 }
@@ -32,14 +33,14 @@ const initialState = {
             article: [
                 {
                     name: 'PE 0301 F',
-                    table: {
+                    parameters: {
                         meltFlow: true,
                     },
                 },
                 {
 
                     name: 'PE 0317 F',
-                    table: {
+                    parameters: {
                         meltFlow: true,
                     },
                 },
@@ -51,21 +52,21 @@ const initialState = {
             article: [
                 {
                     name: 'PE 0021 F',
-                    table: {
+                    parameters: {
                         meltFlow: true,
                     },
                 },
                 {
 
                     name: 'PE 0040 F',
-                    table: {
+                    parameters: {
                         meltFlow: true,
                     },
                 },
                 {
 
                     name: 'PE 0029 F',
-                    table: {
+                    parameters: {
                         meltFlow: true,
                         liquidityIndex: true
                     },
@@ -73,7 +74,7 @@ const initialState = {
                 {
 
                     name: 'PE 0051 F',
-                    table: {
+                    parameters: {
                         meltFlow: true,
                         liquidityIndex: true
                     },
@@ -86,11 +87,12 @@ const initialState = {
             article: [
                 {
                     name: 'PE 0802 F',
-                    table: {
+                    parameters: {
                         meltFlow: true,
-                        destinity: true, 
+                        destinity: true,
                         heatResistanse: true,
                         foodContact: true,
+                        appearance: true,
                     },
                 },
 
@@ -102,26 +104,30 @@ const initialState = {
             article: [
                 {
                     name: 'PE 0421 F',
-                    table: {
+                    parameters: {
                         meltFlow: true,
-                        destinity: true, 
+                        destinity: true,
                         heatResistanse: true,
+                        appearance: true,
                     },
                 },
                 {
                     name: 'PE 0422 F',
-                    table: {
+                    parameters: {
                         meltFlow: true,
-                        destinity: true, 
+                        destinity: true,
                         heatResistanse: true,
+                        appearance: true,
                     },
+
                 },
                 {
                     name: 'PE 0424 F',
-                    table: {
+                    parameters: {
                         meltFlow: true,
-                        destinity: true, 
+                        destinity: true,
                         heatResistanse: true,
+                        appearance: true,
                     },
                 },
 
@@ -134,7 +140,7 @@ const initialState = {
             article: [
                 {
                     name: 'PE 0103 F',
-                    table: {
+                    parameters: {
                         meltFlow: true,
                     },
                 },
@@ -145,8 +151,9 @@ const initialState = {
             article: [
                 {
                     name: 'PE 0101 F',
-                    table: {
+                    parameters: {
                         meltFlow: true,
+                        appearance: true,
                     },
                 },
             ],
@@ -159,10 +166,11 @@ const initialState = {
             article: [
                 {
                     name: 'PE 0706 F',
-                    table: {
+                    parameters: {
                         meltFlow: true,
                         destinity: true,
                         heatResistance: true,
+                        appearance: true,
                     },
                 },
             ],
@@ -173,7 +181,7 @@ const initialState = {
         isOpen: false,
         name: 'asd',
         article: null,
-        table: null,
+        parameters: null,
     }
 }
 
@@ -186,18 +194,18 @@ export const addivitiesSlice = createSlice({
             state.popUp.isOpen = true;
             state.popUp.name = action.payload.name
             state.popUp.article = action.payload.article
-            state.popUp.table = action.payload.table
+            state.popUp.parameters = action.payload.parameters
 
         },
-        closePopUp: (state) => { 
+        closePopUp: (state) => {
             state.popUp.isOpen = false
             state.popUp.name = null
             state.popUp.article = null
-            state.popUp.table= null
-         },
+            state.popUp.parameters = null
+        },
 
     }
 })
 
 export const { openPopUp, closePopUp } = addivitiesSlice.actions
-export default addivitiesSlice.reducer
+export default addivitiesSlice.reducer  

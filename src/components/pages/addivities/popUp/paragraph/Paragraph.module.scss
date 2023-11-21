@@ -1,0 +1,20 @@
+.container {
+    min-height: 20px;
+    margin: 30px auto 0;
+    width: calc(100% - 20px - 20px);
+
+    h6 {
+        color: var(--darkgreen, #06413F);
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    p {
+        margin-top: 10px;
+        color: var(--darkgreen, #06413F);
+        text-align: justify;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 150%;
+    }
+}
