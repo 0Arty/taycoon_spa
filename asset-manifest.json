@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/taycoon_spa/static/css/main.32011645.css",
-    "main.js": "/taycoon_spa/static/js/main.7c4b054a.js",
+    "main.js": "/taycoon_spa/static/js/main.9b77d31d.js",
     "static/media/composites.pdf": "/taycoon_spa/static/media/composites.a68ecbae2280d717692b.pdf",
     "static/media/masterbatch.png": "/taycoon_spa/static/media/masterbatch.c6c938a57891504e1432.png",
     "static/media/composites.png": "/taycoon_spa/static/media/composites.ec4611232b59ae3bc69f.png",
@@ -45,10 +45,10 @@
     "static/media/down.svg": "/taycoon_spa/static/media/down.b15df7a9a5932a7ac39bfb5ea9032ad2.svg",
     "static/media/Selector.svg": "/taycoon_spa/static/media/Selector.3a41129897e32a33886edbc00bcdcea3.svg",
     "main.32011645.css.map": "/taycoon_spa/static/css/main.32011645.css.map",
-    "main.7c4b054a.js.map": "/taycoon_spa/static/js/main.7c4b054a.js.map"
+    "main.9b77d31d.js.map": "/taycoon_spa/static/js/main.9b77d31d.js.map"
   },
   "entrypoints": [
     "static/css/main.32011645.css",
-    "static/js/main.7c4b054a.js"
+    "static/js/main.9b77d31d.js"
   ]
 }
