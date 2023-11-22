@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/taycoon_spa/static/css/main.32011645.css",
-    "main.js": "/taycoon_spa/static/js/main.9b77d31d.js",
+    "main.css": "/taycoon_spa/static/css/main.76656eb5.css",
+    "main.js": "/taycoon_spa/static/js/main.4fb05f41.js",
     "static/media/composites.pdf": "/taycoon_spa/static/media/composites.a68ecbae2280d717692b.pdf",
     "static/media/masterbatch.png": "/taycoon_spa/static/media/masterbatch.c6c938a57891504e1432.png",
     "static/media/composites.png": "/taycoon_spa/static/media/composites.ec4611232b59ae3bc69f.png",
-    "static/media/main.png": "/taycoon_spa/static/media/main.c5b81b2702a03682dba6.png",
+    "static/media/main.png": "/taycoon_spa/static/media/main.aa542ca073ede9a3e180.png",
     "static/media/net.png": "/taycoon_spa/static/media/net.b35c31b9f960253df111.png",
     "static/media/eco.jpg": "/taycoon_spa/static/media/eco.c73189e8ecae949f3332.jpg",
     "static/media/white.jpg": "/taycoon_spa/static/media/white.726b90b0bd90a89926a3.jpg",
@@ -44,11 +44,11 @@
     "index.html": "/taycoon_spa/index.html",
     "static/media/down.svg": "/taycoon_spa/static/media/down.b15df7a9a5932a7ac39bfb5ea9032ad2.svg",
     "static/media/Selector.svg": "/taycoon_spa/static/media/Selector.3a41129897e32a33886edbc00bcdcea3.svg",
-    "main.32011645.css.map": "/taycoon_spa/static/css/main.32011645.css.map",
-    "main.9b77d31d.js.map": "/taycoon_spa/static/js/main.9b77d31d.js.map"
+    "main.76656eb5.css.map": "/taycoon_spa/static/css/main.76656eb5.css.map",
+    "main.4fb05f41.js.map": "/taycoon_spa/static/js/main.4fb05f41.js.map"
   },
   "entrypoints": [
-    "static/css/main.32011645.css",
-    "static/js/main.9b77d31d.js"
+    "static/css/main.76656eb5.css",
+    "static/js/main.4fb05f41.js"
   ]
 }
