@@ -3,6 +3,9 @@ import style from "./Addivities.module.scss"
 import Menu from "./menu/Menu";
 import Content from "./content/Content";
 import PopUp from "./popUp/PopUp";
+import Footer from "../../reusable/footer/Footer";
+import TextBlock from "./text/TextBlock";
+
 
 const Addivities = ({ props }) => {
 
@@ -25,6 +28,8 @@ const Addivities = ({ props }) => {
       <Menu refs={refs} toHandle={toHandle} />
       <Content refs={refs} />
       <PopUp />
+      <TextBlock />
+      <Footer />
 
     </div>
   )

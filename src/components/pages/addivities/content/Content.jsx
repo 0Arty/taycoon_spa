@@ -2,8 +2,7 @@ import { useSelector } from "react-redux";
 import style from "./Content.module.scss"
 import Block from "./block/Block";
 import { useTranslation } from "react-i18next";
-import { useMemo } from "react";
-
+import { ReactComponent as Vector } from "../../../../assets/addivities/Vector.svg";
 const Content = ({ refs }) => {
 
     const addivities = Object.values(useSelector(store => store.addivitiesSlice.addivities))
@@ -19,6 +18,7 @@ const Content = ({ refs }) => {
                     articleArray={add.article}
                     key={`Block${add.name}${index}`} /></div>)
             }
+            <Vector className = {style.vector}/>
         </div>
     )
 };

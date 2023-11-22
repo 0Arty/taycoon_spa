@@ -17,7 +17,7 @@ const White = ({ props }, ref) => {
       <ImageBlock
         image={WhiteIMG}
         text={t('masterbatchPage.white.heading')}
-        paragraph={t('masterbatchPage.white.subheading')} />
+         />
       <TextBlock t = {t}/>
       <TableBlock />
       <p className={style.addition}>

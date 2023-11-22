@@ -15,7 +15,7 @@ const Glass = ({ props }, ref) => {
                 <div className={style.paragraph}>
                     <p>{t('netPage.glass.text1')}</p>
                     <p>{t('netPage.glass.text2')}</p>
-                    <p>{t('netPage.glass.text2')}</p>
+                    <p>{t('netPage.glass.text3')}</p>
                 </div>
             </div>
             <div className={style.image}>

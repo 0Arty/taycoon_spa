@@ -1,10 +1,13 @@
+import ImageComponent from "../../../reusable/BGImage/BgImage";
 import style from "./ImageBlock.module.scss"
 
-const ImageBlock = ({ image, text, paragraph }) => {
+const ImageBlock = ({ image, text, paragraph, alt }) => {
 
     return (
-        <div className={style.image_content} style={{backgroundImage: `url(${image})`}}>
-            <div className = {style.image} >
+        <div className={style.image_content}>
+            <ImageComponent img={image} alt={'asd'}/> 
+
+            <div className = {style.container} >
                 <h4>{text}</h4>
                 <p>{paragraph}</p>
             </div>

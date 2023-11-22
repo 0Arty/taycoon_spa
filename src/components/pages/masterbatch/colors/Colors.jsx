@@ -13,6 +13,7 @@ const Colors = ({props}, ref) => {
   return (
     <div className = {style.box} ref={ref}>
       <ImageBlock image={ColorImg} text={t('masterbatchPage.colors.heading')} paragraph={t('masterbatchPage.colors.subheading')}/>
+      
       <p className = {classNames(style.paragraph1, style.paragraph)}>{t('masterbatchPage.colors.p1')}</p>
       <p className = {classNames(style.paragraph2, style.paragraph)}>{t('masterbatchPage.colors.p2')}</p>
       <AbstractSVG  className = {style.AbstractSVG}/>
