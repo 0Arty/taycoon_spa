@@ -3,12 +3,6 @@ import style from "./Table.module.scss"
 
 const Table = ({ article, t, parameters }) => {
 
-    
-
-    // meltFlow: true,
-    // destinity: true, 
-    // heatResistanse: true,
-    // foodContact: true,
     return (
             <table className = {style.table}>
                 <tbody >

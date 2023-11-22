@@ -12,7 +12,6 @@ const Footer = ({ props }) => {
                     <Links />
                     <Info />
                     <About />
-
                 </div>
                 <div className={style.copyright}>
                     <span>© 2019 - {new Date().getFullYear()} taycoon.com.ua</span>

@@ -6,17 +6,21 @@ import { packingNet } from "./pages/uk/packingNet"
 import { addivities } from "./pages/uk/addivities"
 import { composites } from "./pages/uk/composites"
 import { about } from "./pages/uk/about"
+import { clients } from "./pages/uk/clients"
+import { certificates } from "./pages/uk/certificates"
 
 export const uk = {
     header: headerUK,
     footer: footerUK,
     homePage: homePageUK,
     masterbatchPage: masterbatchUK,
-    netPage : packingNet,
+    netPage: packingNet,
     addPage: addivities,
     compositesPage: composites,
-    aboutPage : about,
-   
+    aboutPage: about,
+    clients: clients,
+    certificates: certificates,
+
     "": "",
 }
 

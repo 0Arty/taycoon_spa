@@ -11,6 +11,8 @@ import Header from "./components/reusable/header/Header";
 import Addivities from "./components/pages/addivities/Addivities.jsx";
 import Composites from "./components/pages/composites/Composites.jsx";
 import About from "./components/pages/about/About.jsx";
+import Certificates from './components/pages/certificates/Certificates.jsx';
+import Clients from './components/pages/clients/Clients.jsx';
 
 const App = ({ props }) => {
 
@@ -27,6 +29,8 @@ const App = ({ props }) => {
         <Route path={routes.ADDITIVES} element={<Addivities />} />
         <Route path={routes.COMPOSITES} element={<Composites />} />
         <Route path={routes.ABOUT} element={<About />} />
+        <Route path={routes.CERTIFICATES} element={<Certificates />} />
+        <Route path={routes.CLIENTS} element={<Clients />} />
         
         {/* <Route path='*' element={NotFound}/> */}
       </Routes>
