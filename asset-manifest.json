@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/taycoon_spa/static/css/main.76656eb5.css",
-    "main.js": "/taycoon_spa/static/js/main.4fb05f41.js",
-    "static/media/composites.pdf": "/taycoon_spa/static/media/composites.a68ecbae2280d717692b.pdf",
+    "main.css": "/taycoon_spa/static/css/main.d4e40bb4.css",
+    "main.js": "/taycoon_spa/static/js/main.92f7fa5b.js",
+    "static/media/composites.pdf": "/taycoon_spa/static/media/composites.cf28a2f1f8ba6521f403.pdf",
     "static/media/masterbatch.png": "/taycoon_spa/static/media/masterbatch.c6c938a57891504e1432.png",
     "static/media/composites.png": "/taycoon_spa/static/media/composites.ec4611232b59ae3bc69f.png",
     "static/media/main.png": "/taycoon_spa/static/media/main.aa542ca073ede9a3e180.png",
@@ -18,9 +18,9 @@
     "static/media/g8.svg": "/taycoon_spa/static/media/g8.33edba87d0a9f9e93fdf6c5d1fd54702.svg",
     "static/media/crimping.svg": "/taycoon_spa/static/media/crimping.4aef6f6c1dd930ccbf4a033e15fd1579.svg",
     "static/media/net.svg": "/taycoon_spa/static/media/net.f70c5284084a6f0ab3a7ace09b8dcd1b.svg",
+    "static/media/Vector.svg": "/taycoon_spa/static/media/Vector.aed6f017dd35e84f6d6c5e606ed7d9f6.svg",
     "static/media/Vector2.svg": "/taycoon_spa/static/media/Vector2.574e1d1e316a9d630dedd5c8501b64be.svg",
     "static/media/guarantes.svg": "/taycoon_spa/static/media/guarantes.1053c2eb99e0518efe25d7a8014bff0e.svg",
-    "static/media/Vector.svg": "/taycoon_spa/static/media/Vector.aed6f017dd35e84f6d6c5e606ed7d9f6.svg",
     "static/media/pdfLogo.svg": "/taycoon_spa/static/media/pdfLogo.9d1a9dd9a09d2f0959d93299825f4886.svg",
     "static/media/advantage.svg": "/taycoon_spa/static/media/advantage.fea70697c7e2bac0f32e5d4e8e3fd8fb.svg",
     "static/media/economy.svg": "/taycoon_spa/static/media/economy.b866328ce2bae513720ef8cef7c91ee5.svg",
@@ -44,11 +44,11 @@
     "index.html": "/taycoon_spa/index.html",
     "static/media/down.svg": "/taycoon_spa/static/media/down.b15df7a9a5932a7ac39bfb5ea9032ad2.svg",
     "static/media/Selector.svg": "/taycoon_spa/static/media/Selector.3a41129897e32a33886edbc00bcdcea3.svg",
-    "main.76656eb5.css.map": "/taycoon_spa/static/css/main.76656eb5.css.map",
-    "main.4fb05f41.js.map": "/taycoon_spa/static/js/main.4fb05f41.js.map"
+    "main.d4e40bb4.css.map": "/taycoon_spa/static/css/main.d4e40bb4.css.map",
+    "main.92f7fa5b.js.map": "/taycoon_spa/static/js/main.92f7fa5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.76656eb5.css",
-    "static/js/main.4fb05f41.js"
+    "static/css/main.d4e40bb4.css",
+    "static/js/main.92f7fa5b.js"
   ]
 }
