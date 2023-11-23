@@ -19,7 +19,7 @@
             // margin-top: 308px;
             color: var(--white, #FFF);
             text-align: center;
-            font-size: 48px;
+            font-size: 36px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -47,7 +47,10 @@
 
             h4 {
                 padding: 0 10px 0 10px;
-                font-size: 36px;
+                font-size: 28px;
+            }
+            p{
+                font-size: 18px;               
             }
         }
 

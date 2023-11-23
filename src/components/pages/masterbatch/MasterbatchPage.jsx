@@ -25,7 +25,7 @@ const MasterbatchPage = ({ props }) => {
   useEffect(() => refPage.current?.scrollIntoView({ block: 'start', behavior: 'smooth' }), [])
 
   return (
-    <div className={style.MasterbatchPage} ref={refPage}>
+    <div className={style.masterbatch} ref={refPage}>
       <Menu toWhite={toWhite} toBlack={toBlack} toColors={toColors} />
       <Colors ref={refColors} />
       <White ref={refWhite} />

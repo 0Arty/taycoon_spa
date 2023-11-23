@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import style from "./Card.module.scss"
 
 const Card = ({title, text, children}) => {

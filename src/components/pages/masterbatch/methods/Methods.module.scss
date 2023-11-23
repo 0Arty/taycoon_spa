@@ -17,7 +17,7 @@
             margin-top: 40px;
             color: var(--gold, #FAC149);
             text-align: center;
-            font-size: 42px;
+            font-size: 36px;
             font-style: normal;
             font-weight: 400;
             line-height: 136.9%;
@@ -68,7 +68,7 @@
 
             h4 {
                 padding: 0px 10px;
-                font-size: 36px;
+                font-size: 28px;
             }
 
             .vector1 {
@@ -115,15 +115,19 @@
                 font-size: 24px;
             }
             .vector1 {
-                top: 700px;
+                scale: 0.7;
+                opacity: 0.3;
+                top: 300px;
                 right: -90px;
                 width: 500px;
                 height: 500px;
             }
 
             .vector2 {
+                scale: 0.7;
                 left: 0px;
-                top: 100px;
+                top: 0px;
+                opacity: 0.3;
                 width: 500px;
                 height: 500px;
             }

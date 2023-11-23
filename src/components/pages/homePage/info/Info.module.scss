@@ -2,6 +2,9 @@
     margin: 100px auto 0;
     width: 1060px;
     min-height: 50px;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
 
     h3 {
         color: var(--green, #056461);
@@ -10,22 +13,82 @@
         font-weight: 600;
         line-height: normal;
     }
-    .card_container{
-         margin-top: 70px;
-         display: flex;
-         gap: 20px;
-         justify-content: space-between;
-         flex-wrap: wrap;
+
+    .extrawrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .card_container {
+            margin-top: 70px;
+            //  display: flex;
+            //  gap: 20px;
+            //  justify-content: space-between;
+            //  flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            .gridItem{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
+    }
 }
 
 @media screen and (max-width: 1060px) {
     .box {
-        text-align: center;
-        width: 100%;
-        .card_container{
-            justify-content: center
+        h3 {
+            font-size: 32px;
+        }
 
+        .extrawrapper {
+
+            .card_container {
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                align-self: center;
+                justify-self: center;
+                align-items: center;
+                justify-content: center;
+
+                gap: 20px;
+
+                // .item3 {
+                //     grid-row: 2/3;
+                //     grid-column: 1/2;
+                // }
+
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .box {
+        h3 {
+            font-size: 28px;
+
+        }
+
+        .extrawrapper {
+
+            .card_container {
+                width: 100%;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                align-self: center;
+                justify-self: center;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+            }
         }
     }
 }

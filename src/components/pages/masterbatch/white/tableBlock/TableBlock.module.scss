@@ -3,28 +3,34 @@
     table-layout: fixed;
     width: 100%;
     border-spacing: 20px;
-    color: #000;
+    color: #06413F;
     text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
 
-    td {
-        height: 50px;
-        text-align: center;
-        background: rgba(0, 0, 0, 0.05);
 
-        &:nth-child(1) {
-            width: 25%;
-        }
+    tbody {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        tr {
 
-        &:nth-child(2) {
-            width: 40%;
-        }
+            td {
+                height: 50px;
+                text-align: center;
+                background: rgba(0, 0, 0, 0.05);
 
-        &:nth-child(3) {
-            width: 35%;
+                &:nth-child(1) {
+                    width: 25%;
+                }
+
+                &:nth-child(2) {
+                    width: 40%;
+                }
+
+                &:nth-child(3) {
+                    width: 35%;
+                }
+            }
         }
     }
 
@@ -32,15 +38,21 @@
 }
 
 @media screen and (max-width: 767px) {
-    table {
+    .table {
         min-height: 50px;
-        border-spacing: 5px;
-        font-size: 14px;
+        border-spacing: 1px;
+        
+        tbody {
+            tr {
+                font-size: 12px;
+                
+                td {
 
-        td {
-            padding: 10px;
-            hyphens: auto;
+                    padding: 10px;
+                    hyphens: auto;
 
+                }
+            }
         }
     }
 }

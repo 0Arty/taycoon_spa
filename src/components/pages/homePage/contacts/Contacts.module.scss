@@ -11,7 +11,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-
+        min-height: 100px;
         h3 {
             margin-top: 10px;
             color: var(--green, #056461);
@@ -20,6 +20,7 @@
             font-style: normal;
             font-weight: 600;
             line-height: normal;
+            text-shadow: 1px 1px 8px white;
         }
 
         .svg {
@@ -45,21 +46,24 @@
 @media screen and (max-width: 900px) {
     .box {
         .wrapper {
-            .svg {
-                right: 50%;
-                transform: translate(50%, -50px);
-            }
+            // .svg {
+            //     right: 50%;
+            //     transform: translate(50%, -50px);
+            // }
         }
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 430px) {
     .box {
-
-        .svg {
-
-            right: calc(100vw / 3);
-            transform: translate(50%);
+        .wrapper{
+            h3{
+                font-size: 26px;
+            }
         }
+        // .svg {
+        //     right: calc(100vw / 3);
+        //     transform: translate(50%);
+        // }
     }
 }

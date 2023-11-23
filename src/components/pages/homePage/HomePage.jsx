@@ -14,7 +14,7 @@ const HomePage = ({ refContact }, ) => {
   useEffect(() => {
     ref.current?.scrollIntoView({ block: 'start', behavior: 'smooth' })
   }, [])
-
+ 
   return (
     <div className={style.box} ref={ref}>
       <Products />

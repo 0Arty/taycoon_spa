@@ -3,94 +3,104 @@
     height: 100%;
     display: flex;
     margin-top: 55px;
+    position: relative;
 
-    .element {
-        height: 100%;
-        width: 25%;
-        transition: 0.9s;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .link {
-            text-decoration: none;
-
-            h2 {
-                color: var(--white, #FFF);
-                text-align: center;
-                font-family: Montserrat;
-                font-size: calc(2vw + 2vh);
-                font-style: normal;
-                font-weight: 600;
-                line-height: normal;
-                min-width: 20px;
-                max-width: calc(100vw / 6);
-                // width: calc( 100vw / 4);
-            }
-        }
-
-        &:hover {
-            width: 70%;
-            transition: 0.9s;
-            h2{
-                transition: 0.3s;
-                color: #FAC149;
-                text-decoration-line: underline;
-            }
-        }
-    }
-
-    .mastebatch {
-        background: linear-gradient(0deg, rgba(12, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%), url('../../../../assets/homepage/menu/masterbatch.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
-    }
-
-    .net {
-        background: linear-gradient(0deg, rgba(12, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%), url('../../../../assets/homepage/menu/net.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .addivities {
-        background: linear-gradient(0deg, rgba(12, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%), url('../../../../assets/homepage/menu/addivites.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .composites {
-        background: linear-gradient(0deg, rgba(12, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%), url('../../../../assets/homepage/menu/composites.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
-    }
 }
 
-@media screen and (max-width: 900px) {
-    .box {
+@media screen and (max-width: 768px){
+    .box{
         flex-direction: column;
-
-        .element {
-            height: 25%;
-            width: 100%;
-
-            &:hover {
-                height: 40%;
-                width: 100%;
-                transition: 0.9s;
-            }
-            .link{
-                h2 {
-                    width: 100%;
-                    max-width: 100%;
-                }
-            }
-        }
     }
 }
+
+
+// .element {
+//     height: 100%;
+//     width: 25%;
+//     transition: 0.9s;
+//     cursor: pointer;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     .link {
+//         text-decoration: none;
+
+//         h2 {
+//             color: var(--white, #FFF);
+//             text-align: center;
+//             font-family: Montserrat;
+//             font-size: calc(2vw + 2vh);
+//             font-style: normal;
+//             font-weight: 600;
+//             line-height: normal;
+//             min-width: 20px;
+//             max-width: calc(100vw / 6);
+//             // width: calc( 100vw / 4);
+//         }
+//     }
+
+//     &:hover {
+//         width: 70%;
+//         transition: 0.9s;
+//         h2{
+//             transition: 0.3s;
+//             color: #FAC149;
+//             text-decoration-line: underline;
+//         }
+//     }
+// }
+
+// .mastebatch {
+//     background: linear-gradient(0deg, rgba(12, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%), url('../../../../assets/homepage/menu/masterbatch.png');
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+
+//     // }
+
+//     .net {
+//         background: linear-gradient(0deg, rgba(12, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%), url('../../../../assets/homepage/menu/net.png');
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         background-position: center;
+//     }
+
+//     .addivities {
+//         background: linear-gradient(0deg, rgba(12, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%), url('../../../../assets/homepage/menu/addivites.jpg');
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         background-position: center;
+//     }
+
+//     .composites {
+//         background: linear-gradient(0deg, rgba(12, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%), url('../../../../assets/homepage/menu/composites.png');
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         background-position: center;
+
+//     }
+// }
+
+// @media screen and (max-width: 900px) {
+//     .box {
+//         flex-direction: column;
+
+//         .element {
+//             height: 25%;
+//             width: 100%;
+
+//             &:hover {
+//                 height: 40%;
+//                 width: 100%;
+//                 transition: 0.9s;
+//             }
+//             .link{
+//                 h2 {
+//                     width: 100%;
+//                     max-width: 100%;
+//                 }
+//             }
+//         }
+//     }
+// }

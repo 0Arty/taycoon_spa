@@ -18,7 +18,7 @@ const App = ({ props }) => {
 
   const refContact = useRef(null)
   const toContact = () => setTimeout(() => refContact.current?.scrollIntoView({ block: 'start', behavior: 'smooth' }), 0)
-
+ 
   return (
     <div className={style.box}>
       <Header toContact={toContact} />

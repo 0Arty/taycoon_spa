@@ -7,14 +7,36 @@ import { ReactComponent as Guarantees } from "../../../../assets/homepage/cards/
 import { ReactComponent as Laboratory } from "../../../../assets/homepage/cards/laboratory.svg";
 import { ReactComponent as Supporting } from "../../../../assets/homepage/cards/supporting.svg";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 const Cards = ({ props }) => {
 
     const { t } = useTranslation()
-    return (
-        <div className={style.content}>
+    const contentAnimation = {
 
-            <Card title={t('homePage.cards.saving')} text={t('homePage.cards.saving subtitle')} >
+        hidden: {
+            x: 300,
+            opacity: 0,
+        },
+        visible: custom => ({
+            x: 0,
+            opacity: 1,
+            transition: {
+                delay: custom * 0.2,
+                duration: 0.3
+            }
+        }),
+    }
+    return (
+     <motion.div className={style.content}
+     initial='hidden'
+     whileInView='visible'
+     variants={contentAnimation}
+     custom={1}
+     >
+
+            <Card title={t('homePage.cards.saving')} text={t('homePage.cards.saving subtitle')} 
+            vari>
                 <Economy />
             </ Card>
 
@@ -34,7 +56,7 @@ const Cards = ({ props }) => {
                 <Supporting />
             </ Card >
 
-        </div >
+        </motion.div >
     )
 };
 

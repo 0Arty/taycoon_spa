@@ -1,82 +1,77 @@
-.box {
-    width: calc(25% - 20px);
+.wrapper {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    background: var(--white, #FFF);
 
-    .wrapper {
-        width: 250px;
-        height: 400px;
-        border-radius: 20px;
-        background: var(--white, #FFF);
+    h5 {
+        height: 56px;
+        margin-top: 85px;
+        color: var(--darkgreen, #06413F);
+        text-align: center;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%
+    }
 
-        h5 {
-            height: 56px;
-            margin-top: 85px;
-            color: var(--darkgreen, #06413F);
-            text-align: center;
-            font-size: 28px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 100%
-        }
-
-        p {
-            margin-top: 100px;
-            color: var(--darkgreen, #06413F);
-            text-align: center;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-            /* 36px */
-            letter-spacing: 0.72px;
-        }
+    p {
+        margin-top: 100px;
+        color: var(--darkgreen, #06413F);
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        /* 36px */
+        letter-spacing: 0.72px;
     }
 }
 
 @media screen and (max-width: 1060px) {
-    .box {
-        width: calc(50% - 20px);
 
-        .wrapper {
-            h5 {
-                padding: 0 10px;
-                font-size: 24px;
-            }
+    .wrapper {
+        h5 {
+            padding: 0 10px;
+            font-size: 24px;
+        }
 
-            p {
-                font-size: 18px;
-                padding: 0 10px;
+        p {
+            font-size: 18px;
+            padding: 0 10px;
 
-            }
         }
     }
-
 }
+
+
+
 
 @media screen and (max-width: 767px) {
-    .box {
-        .wrapper {
-            width: 180px;
-            height: 250px;
 
-            h5 {
-                height: 56px;
-                margin-top: 20px;
-            }
+    .wrapper {
+        width: 180px;
+        height: 250px;
 
-            p {
-                padding: 0 5px;
-                font-size: 16px;
-                margin-top: 60px;
+        h5 {
+            height: 56px;
+            margin-top: 20px;
+        }
 
-            }
+        p {
+            padding: 0 5px;
+            font-size: 16px;
+            margin-top: 60px;
+
         }
     }
 }
 
-@media screen and (max-width: 410px){
-    .box{
-        width: calc(100% - 20px);
+@media screen and (max-width: 400px) {
+    .wrapper{
+        scale: 0.95;
     }
 }
