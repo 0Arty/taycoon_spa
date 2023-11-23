@@ -1,7 +1,7 @@
 export const footerUK = {
     links: {
         "masterbatch":"Барвники для полімерів",
-        "addtions":"Добавки для полімерів",
+        "addtions":"Добавки до полімерів",
         "net":"Сітка екструдована",
         "composites":"Композити",
     },

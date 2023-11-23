@@ -44,7 +44,7 @@
     }
 }
 @media screen and (max-width: 767px){
-    table{
+    .table{
         margin-top: 20px;
         border-spacing: 5px;
         font-size: 14px;
@@ -74,8 +74,9 @@
 }
 
 @media screen and (max-width: 500px){
-    table{
-        border-spacing: 1px;
+    .table{
+        // border-spacing: px;
+        border-spacing: 0px 10px;
         margin: 0;
         margin-top: 20px;
         width: 100%;
@@ -83,7 +84,7 @@
         font-weight: 300;
         hyphens:auto;
         td{
-            hyphens:auto;*
+            hyphens:auto;
             &:nth-child(1) {
                 width: 25%;
             }
