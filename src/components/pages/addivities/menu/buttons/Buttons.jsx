@@ -5,8 +5,6 @@ import { useSelector } from "react-redux";
 const Buttons = ({ refs, toHandle }) => {
 
     const { t } = useTranslation()
-    const { refBlock, refStatic, refUV, refOxi, refProc, refOpti, refClean, refFoam } = refs
-
     const refsArray = Object.values(refs)
     const addivitiesArray = Object.values(useSelector(store => store.addivitiesSlice.addivities))
 

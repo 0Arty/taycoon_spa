@@ -38,8 +38,6 @@ const PopUp = () => {
     }
   }
   const { t } = useTranslation()
-  console.log('rerendering:')
-  // if (!isOpen) return null
   return (
     <AnimatePresence >
       {isOpen && <motion.div className={style.background}

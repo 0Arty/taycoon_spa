@@ -1,11 +1,11 @@
 import style from "./AnimatedMenu.module.scss"
-
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { routes } from "../../../../routes";
-
 import LngSelector from "../languageSelector/LngSelector";
+import { useEffect, useRef } from "react";
+
 
 const AnimatedMenu = ({ isOpen }) => {
 
@@ -25,6 +25,7 @@ const AnimatedMenu = ({ isOpen }) => {
     }
     const { t } = useTranslation()
 
+
     return (
         <AnimatePresence >
             {isOpen && (
@@ -35,6 +36,7 @@ const AnimatedMenu = ({ isOpen }) => {
                     animate={'animate'}
                     exit={'exit'}
                     transition={{ duration: 0.5 }}
+
                 >
                     <ul >
                         <li>
@@ -63,8 +65,9 @@ const AnimatedMenu = ({ isOpen }) => {
                                 {t("header.contacts")}
                             </Link>
                         </li>
-                        <li>
-                            <LngSelector /></li>
+                        <li className={style.selector}>
+                            <LngSelector />
+                        </li>
                     </ul>
                 </motion.div>)}
         </AnimatePresence>

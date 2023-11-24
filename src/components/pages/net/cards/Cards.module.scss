@@ -4,7 +4,7 @@
     min-height: 600px;
     background: linear-gradient(0deg, #06413F 0%, rgba(31, 83, 81, 0.88) 28.71%, rgba(217, 217, 217, 0.00) 99.86%);
     position: relative;
-
+    padding-bottom: 100px;
     .wrapper {
         width: 1060px;
         margin: 0 auto;
@@ -16,7 +16,7 @@
             margin-top: 20px;
             color: var(--darkgreen, #06413F);
             text-align: center;
-            font-size: 36px;
+            font-size: 24px;
             font-style: normal;
             font-weight: 600;
             line-height: 100%;

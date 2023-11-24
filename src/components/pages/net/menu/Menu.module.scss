@@ -29,7 +29,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
-
+        
         h3 {
             color: var(--white, #FFF);
             text-align: center;
@@ -43,6 +43,7 @@
             min-height: 10px;
 
             bottom: 150px;
+            padding-bottom: 30px;
             display: flex;
             justify-content: center;
 
@@ -103,12 +104,13 @@
 
     .box {
         .content {
+            padding-bottom: 40px;
             h3 {
                 position: absolute;
                 top: 35%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                font-size: 48px;
+                font-size: 36px;
             }
 
             .btns {
@@ -116,8 +118,9 @@
                 width: fit-content;
                 gap: 30px;
                 right: 40px;
-
+                padding-bottom: 60px;
                 button {
+                    font-size: 18px;
                     text-align: right;
                     width: 100%;
 

@@ -12,10 +12,8 @@ export const headerSlice = createSlice({
         setIsOpen: (state) => {
             state.isOpen = !state.isOpen
         },
-        scrollToTopOn: (state) => state.isScroll = true,
-        scrollToTopOff: (state) => state.isScroll = false,
     }
 })
 
-export const { setIsOpen, scrollToTopOn,scrollToTopOff } = headerSlice.actions
+export const { setIsOpen} = headerSlice.actions
 export default headerSlice.reducer

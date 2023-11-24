@@ -5,6 +5,7 @@ import { forwardRef } from "react";
 
 const Block = ({ articleArray, heading}, ref) => {
     const { t } = useTranslation()
+    console.log('rerender((')
     return (
         <div className={style.box} ref={ref}>
             <h4>{heading}</h4>

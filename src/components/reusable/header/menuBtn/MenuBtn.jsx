@@ -9,7 +9,7 @@ const MenuBtn = ({ isOpen }) => {
     
     
     const dispatch = useDispatch()
-    const btn = useRef()
+    const btn = useRef(null)
     const openMenuhandler = () => {
         dispatch(setIsOpen())
     }

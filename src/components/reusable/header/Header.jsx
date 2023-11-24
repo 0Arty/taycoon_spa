@@ -1,5 +1,5 @@
 import style from "./Header.module.scss"
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -9,21 +9,25 @@ import MenuBtn from "./menuBtn/MenuBtn";
 import AnimatedMenu from "./animatedMenu/AnimatedMenu";
 import { ReactComponent as Logo } from "../../../assets/header/Logo.svg"
 
-const Header = ({ toContact }) => {
+const Header = ({ toContact, toProduct }) => {
 
     const isOpen = useSelector((state) => state.headerSlice.isOpen)
     const { t } = useTranslation()
     const navigate = useNavigate()
-    
+
     const goToMainHandler = () => {
         navigate('/')
     }
+
 
     return (
         <div className={style.wrapper}>
             <div className={style.content_box}>
                 <div className={style.logo}>
-                    <div className={style.logo_link} onClick={goToMainHandler}>
+                    <div className={style.logo_link} onClick={() => {
+                        goToMainHandler()
+                        toProduct()
+                    }} >
                         <Logo />
                         <h1>Taycoon®</h1>
                     </div>
@@ -31,7 +35,7 @@ const Header = ({ toContact }) => {
                 <nav className={style.navigation}>
                     <ul >
                         <li>
-                            <Link className={style.link} to={routes.MAIN}>
+                            <Link className={style.link} to={routes.MAIN} onClick={toProduct}>
                                 {t("header.product")}
                             </Link>
                         </li>
@@ -50,13 +54,16 @@ const Header = ({ toContact }) => {
                                 {t("header.clients")}
                             </Link>
                         </li>
-                        <li
-                        ><Link className={style.link} onClick={toContact} to={routes.MAIN}>
+                        <li>
+                            <Link className={style.link} onClick={toContact} to={routes.MAIN}>
                                 {t("header.contacts")}
                             </Link>
                         </li>
-                        <li>
-                            <LngSelector />
+                        <li className = {style.lngSelectorLi}>
+                            <div className={style.lngSelector}>
+                                <LngSelector />
+
+                            </div>
                         </li>
                     </ul>
                 </nav>

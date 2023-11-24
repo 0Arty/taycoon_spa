@@ -5,7 +5,7 @@
     top: 0;
     z-index: 1000;
     background-color: #FFF;
-    
+
     .content_box {
         z-index: 100;
         background-color: #FFF;
@@ -27,7 +27,8 @@
                 align-items: center;
                 text-decoration: none;
                 color: #06413F;
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                 }
 
@@ -48,12 +49,13 @@
             ul {
                 display: flex;
 
-                :last-child{
+                :last-child {
                     margin-right: 0px;
-                }  
+                }
+
                 li {
-                margin-right: 40px;
-                  
+                    margin-right: 40px;
+
                     cursor: pointer;
 
                     .link {
@@ -72,7 +74,14 @@
                         }
                     }
 
-                    
+
+                }
+
+                .lngSelectorLi {
+                    width: 60px;
+                    .lngSelector {
+                        position: absolute;
+                    }
                 }
             }
         }
@@ -94,12 +103,13 @@
 
             .navigation {
                 ul {
-                    :last-child{
+                    :last-child {
                         margin-right: 0px;
-                    } 
-                    li{
-                        margin-right: 20px ;
-                    } 
+                    }
+
+                    li {
+                        margin-right: 20px;
+                    }
                 }
             }
         }

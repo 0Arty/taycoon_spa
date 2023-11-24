@@ -20,8 +20,6 @@ export const uk = {
     aboutPage: about,
     clients: clients,
     certificates: certificates,
-
-    "": "",
 }
 
 

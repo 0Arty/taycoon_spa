@@ -17,13 +17,18 @@ import Clients from './components/pages/clients/Clients.jsx';
 const App = ({ props }) => {
 
   const refContact = useRef(null)
+  const refHomePage = useRef(null)
   const toContact = () => setTimeout(() => refContact.current?.scrollIntoView({ block: 'start', behavior: 'smooth' }), 0)
- 
+  const toProduct = () => setTimeout(() => refHomePage.current?.scrollIntoView({ block: 'start', behavior: 'smooth' }), 0)
+
   return (
     <div className={style.box}>
-      <Header toContact={toContact} />
+
+
+
+      <Header toContact={toContact} toProduct={toProduct}/>
       <Routes >
-        <Route path={routes.MAIN} element={<HomePage refContact={refContact} />} />
+        <Route path={routes.MAIN} element={<HomePage ref={refHomePage} />} />
         <Route path={routes.MASTERBATCH} element={<MasterbatchPage />} />
         <Route path={routes.PACKING_NET} element={<Net />} />
         <Route path={routes.ADDITIVES} element={<Addivities />} />

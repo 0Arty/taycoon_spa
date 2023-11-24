@@ -9,7 +9,7 @@ const Product = ({ text, image, alt, onHoverMousehandler, number, onMouseLeave, 
     useEffect(() => {
         if(window.innerWidth <= 768) return
         if (window.innerWidth >= 1120) {setAnimationParametrs({fontSize : '36px'})}
-        else if (window.innerWidth < 1120 && window.innerWidth >= 800){setAnimationParametrs({fontSize : '20px'})}
+        else if (window.innerWidth < 1120 && window.innerWidth >= 800){setAnimationParametrs({fontSize : '18px'})}
         else if (window.innerWidth < 800 ){setAnimationParametrs({fontSize : '12px'})}
     }, [])
 
