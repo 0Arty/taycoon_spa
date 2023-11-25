@@ -1,4 +1,4 @@
-import { forwardRef, useEffect, useRef } from "react";
+import { forwardRef, useEffect} from "react";
 import FooterForHomePage from "./FooterForHomePage";
 import style from "./HomePage.module.scss"
 import Cards from "./cards/Cards";
@@ -13,7 +13,7 @@ const HomePage = ({ refContact}, ref) => {
 
   useEffect(() => {
     ref.current?.scrollIntoView({ block: 'start', behavior: 'smooth' })
-  }, [])
+  })
  
   return (
     <div className={style.box} ref={ref}>

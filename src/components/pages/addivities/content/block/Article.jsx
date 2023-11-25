@@ -9,7 +9,6 @@ const Article = ({ article, paragraph, heading,parameters }) => {
         dispatch(openPopUp({ name: heading, article,parameters }
         ))
     }
-    
 
     return (
         <div className={style.box}>

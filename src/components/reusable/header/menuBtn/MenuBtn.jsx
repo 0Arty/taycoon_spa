@@ -1,17 +1,14 @@
 import style from "./MenuBtn.module.scss"
 import { useRef } from "react";
-import { useDispatch} from "react-redux";
-import { setIsOpen } from "../../../../store/slices/headerSlice";
 import classNames from 'classnames';
 
 
-const MenuBtn = ({ isOpen }) => {
+const MenuBtn = ({ isOpen, setIsOpen }) => {
     
     
-    const dispatch = useDispatch()
     const btn = useRef(null)
     const openMenuhandler = () => {
-        dispatch(setIsOpen())
+        setIsOpen(prev => !prev)
     }
 
     return (

@@ -9,6 +9,7 @@ const Content = ({ refs }) => {
     const refsArray = Object.values(refs)
     const { t } = useTranslation()
 
+    console.log('rerender:')
     return (
         <div className={style.container}>
             {

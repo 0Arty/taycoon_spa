@@ -1,7 +1,38 @@
-.box{
+.box {
     width: 100%;
     height: calc(100vh - 55px);
     margin-top: 55px;
     scroll-margin: 55px;
     background-color: green;
+
+    .content {
+        width: 1060px;
+        margin: 0 auto;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h4{
+            color: var(--green, #056461);
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 200%;
+        }
+        .ukraninanParters {
+            margin-bottom: 50px;
+        }
+        .euroParters{
+            margin: 50px 0 20px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1060px){
+    .box{
+        .content{
+            width: 100%;
+        }
+    }
 }

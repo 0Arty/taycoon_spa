@@ -1,0 +1,32 @@
+.container {
+    position: absolute;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    z-index: 100;
+    top: 50px;
+    left: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    backdrop-filter: blur(2.5px);
+    background-color: rgba(6, 65, 63, 0.80);
+    .box {
+        height: 90%;
+
+        .image {
+            height: 100%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .container {
+        .box {
+            height: 75%;
+        }
+    }
+}

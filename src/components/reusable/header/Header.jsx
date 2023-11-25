@@ -1,24 +1,41 @@
 import style from "./Header.module.scss"
-import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { routes } from "../../../routes";
 import { Link, useNavigate } from "react-router-dom";
 
-import { routes } from "../../../routes";
-import LngSelector from "./languageSelector/LngSelector";
-import MenuBtn from "./menuBtn/MenuBtn";
-import AnimatedMenu from "./animatedMenu/AnimatedMenu";
 import { ReactComponent as Logo } from "../../../assets/header/Logo.svg"
+import { AnimatePresence, motion } from "framer-motion";
+
+import LngSelector from "./languageSelector/LngSelector";
+import AnimatedMenu from "./animatedMenu/AnimatedMenu";
+import MenuBtn from "./menuBtn/MenuBtn";
 
 const Header = ({ toContact, toProduct }) => {
 
-    const isOpen = useSelector((state) => state.headerSlice.isOpen)
     const { t } = useTranslation()
     const navigate = useNavigate()
 
     const goToMainHandler = () => {
         navigate('/')
     }
+    const variableForAnimation = {
+        init: {
+            y: -250,
+            opacity: 0
+        },
+        animate: {
+            y: 0,
+            opacity: 1
+        },
+        exit: {
+            y: -250,
+            opacity: 0,
+        }
+    }
+    const [isOpen, setIsOpen] = useState( false)
 
+    const closeOnClickOutSide = () => setIsOpen(false) 
 
     return (
         <div className={style.wrapper}>
@@ -59,7 +76,7 @@ const Header = ({ toContact, toProduct }) => {
                                 {t("header.contacts")}
                             </Link>
                         </li>
-                        <li className = {style.lngSelectorLi}>
+                        <li className={style.lngSelectorLi}>
                             <div className={style.lngSelector}>
                                 <LngSelector />
 
@@ -67,11 +84,23 @@ const Header = ({ toContact, toProduct }) => {
                         </li>
                     </ul>
                 </nav>
-                <MenuBtn isOpen={isOpen} />
+                <MenuBtn isOpen={isOpen} setIsOpen={setIsOpen}/>
             </div>
+            <AnimatePresence>
+                {isOpen &&
+                    <motion.div
+                        className={style.menu_window}
+                        variants={variableForAnimation}
+                        initial={'init'}
+                        animate={'animate'}
+                        exit={'exit'}
+                        transition={{ duration: 0.5 }}
+                    >
+                        <AnimatedMenu setIsOpen={closeOnClickOutSide} toContact={toContact} />
+                    </motion.div>
 
-            <AnimatedMenu isOpen={isOpen} />
-
+                }
+            </AnimatePresence>
         </div>
     )
 };

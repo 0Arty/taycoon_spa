@@ -1,17 +1,15 @@
-.menu_window {
-    display: none;
-    position: absolute;
-    z-index: -10;
-    right: 0;
+.container{
     width: 250px;
     background-color: white;
     border-radius: 0 0 0 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     ul {
-
+        
         li {
             margin: 20px 10px 40px 10px;
             cursor: pointer;
-
+            
             .link {
                 font-size: 24px;
                 font-style: normal;
@@ -20,7 +18,7 @@
                 text-decoration: none;
                 color: #06413F;
                 transition: 0.3s;
-
+                
                 &:hover {
                     transition: 0.3s;
                     color: #FAC149;

@@ -28,7 +28,7 @@ const App = ({ props }) => {
 
       <Header toContact={toContact} toProduct={toProduct}/>
       <Routes >
-        <Route path={routes.MAIN} element={<HomePage ref={refHomePage} />} />
+        <Route path={routes.MAIN} element={<HomePage ref={refHomePage} refContact={refContact} />} />
         <Route path={routes.MASTERBATCH} element={<MasterbatchPage />} />
         <Route path={routes.PACKING_NET} element={<Net />} />
         <Route path={routes.ADDITIVES} element={<Addivities />} />
