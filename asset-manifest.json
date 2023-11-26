@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/taycoon_spa/static/css/main.1c050d93.css",
-    "main.js": "/taycoon_spa/static/js/main.1c38ee56.js",
+    "main.css": "/taycoon_spa/static/css/main.d978f824.css",
+    "main.js": "/taycoon_spa/static/js/main.447b8093.js",
     "static/media/san_vegetables_p1.jpg": "/taycoon_spa/static/media/san_vegetables_p1.ed11d4837a32948b6d78.jpg",
     "static/media/consulting_addivities_2013_p1.jpg": "/taycoon_spa/static/media/consulting_addivities_2013_p1.02cd6c5379deb1238c65.jpg",
     "static/media/composites.pdf": "/taycoon_spa/static/media/composites.cf28a2f1f8ba6521f403.pdf",
@@ -69,11 +69,11 @@
     "index.html": "/taycoon_spa/index.html",
     "static/media/down.svg": "/taycoon_spa/static/media/down.b15df7a9a5932a7ac39bfb5ea9032ad2.svg",
     "static/media/Selector.svg": "/taycoon_spa/static/media/Selector.b570246700132885e407d9b0f433a43d.svg",
-    "main.1c050d93.css.map": "/taycoon_spa/static/css/main.1c050d93.css.map",
-    "main.1c38ee56.js.map": "/taycoon_spa/static/js/main.1c38ee56.js.map"
+    "main.d978f824.css.map": "/taycoon_spa/static/css/main.d978f824.css.map",
+    "main.447b8093.js.map": "/taycoon_spa/static/js/main.447b8093.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c050d93.css",
-    "static/js/main.1c38ee56.js"
+    "static/css/main.d978f824.css",
+    "static/js/main.447b8093.js"
   ]
 }
