@@ -7,7 +7,7 @@ const Block = ({ articleArray, heading}, ref) => {
     const { t } = useTranslation()
 
 
-
+    console.log('blockRerender:')
 
     return (
         <div className={style.box} ref={ref}>

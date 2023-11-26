@@ -2,12 +2,27 @@
     margin-top: 50px;
     margin-bottom: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
     align-self: center;
     gap: 20px;
+    .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 }
 
+@media screen and (max-width: 1080px){
+    .container{
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        gap: 20px;
+    }
+}
 @media screen and (max-width: 890px){
     .container{
         margin: 50 auto;

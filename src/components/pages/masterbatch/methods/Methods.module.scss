@@ -44,14 +44,16 @@
             position: absolute;
             right: -350px;
             z-index: -1;
+            height: 500px;
+            top: 30px;
         }
 
         .vector2 {
             z-index: -1;
             width: 600px;
-            height: 600px;
             left: -400px;
-            top: 20px;
+            height: 500px;
+            top: 30px;
             position: absolute;
         }
     }

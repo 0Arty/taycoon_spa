@@ -5,28 +5,83 @@ import TextBlock from "./textBlock/TextBlock";
 import TableBlock from "./tableBlock/TableBlock";
 import ImageBlock from "../imageBlock/ImageBlock";
 import { useTranslation } from "react-i18next";
-import {ReactComponent as AbstractSVG} from '../../../../assets/Vector.svg'
+import { ReactComponent as AbstractSVG } from '../../../../assets/Vector.svg'
+import { motion } from "framer-motion";
 
 const White = ({ props }, ref) => {
 
   const { t } = useTranslation()
+  const contentAnimation = {
+    imageBlock: {
+      hidden: {
+        x: -400,
+        opacity: 0,
+      },
+      visible: custom => ({
+        x: 0,
+        opacity: 1,
+        transition: {
+          delay: custom * 0.2,
+          duration: 0.3
+        }
+      }),
+    },
+    paragraph: {
+      hidden: {
+        x: 200,
+        opacity: 0,
+      },
+      visible: custom => ({
+        x: 0,
+        opacity: 1,
+        transition: {
+          delay: custom * 0.1,
+          duration: 0.3
+        }
+      }),
+    }
+  }
+
 
   return (
-
     <div className={style.box} ref={ref}>
-      <ImageBlock
-        image={WhiteIMG}
-        text={t('masterbatchPage.white.heading')}
-         />
-      <TextBlock t = {t}/>
+      <motion.div
+        initial='hidden'
+        whileInView='visible'
+        variants={contentAnimation.imageBlock}
+        custom={0}
+
+      >
+
+        <ImageBlock
+          image={WhiteIMG}
+          text={t('masterbatchPage.white.heading')}
+        />
+      </motion.div>
+
+      <TextBlock t={t} />
+
       <TableBlock />
-      <p className={style.addition}>
+
+      <motion.p className={style.addition}
+              initial='hidden'
+              whileInView='visible'
+              variants={contentAnimation.paragraph}
+              custom={1}
+      
+      >
         {t('masterbatchPage.white.text')}
-      </p>
-      <p className={style.conclusion}>
+      </motion.p>
+
+      <motion.p className={style.conclusion}
+                    initial='hidden'
+                    whileInView='visible'
+                    variants={contentAnimation.paragraph}
+                    custom={2}>
         {t('masterbatchPage.white.conclusion')}
-      </p>
-        <AbstractSVG className = {style.abbstractSVG}/> 
+      </motion.p>
+
+      <AbstractSVG className={style.abbstractSVG} />
     </div>
   )
 };

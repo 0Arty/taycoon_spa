@@ -1,12 +1,38 @@
 import { useTranslation } from "react-i18next";
 import style from "./TableBlock.module.scss"
+import { motion } from "framer-motion";
 
 const TableBlock = ({ props }) => {
 
-    const {t} = useTranslation()
+    const { t } = useTranslation()
+
+    const contentAnimation = {
+
+        hidden: {
+            x: -400,
+            opacity: 0,
+        },
+        visible: custom => ({
+            x: 0,
+            opacity: 1,
+            transition: {
+                delay: custom * 0.2,
+                duration: 0.3
+            }
+        }),
+
+    }
+
     return (
-        <table className = {style.table}>
-            <tbody>
+        <motion.table className={style.table}
+
+        >
+            <motion.tbody
+                        initial='hidden'
+                        whileInView='visible'
+                        variants={contentAnimation}
+                        custom={1}
+            >
                 <tr>
                     <td>{t('masterbatchPage.white.table.11')}</td>
                     <td>{t('masterbatchPage.white.table.12')}</td>
@@ -37,9 +63,9 @@ const TableBlock = ({ props }) => {
                     <td>{t('masterbatchPage.white.table.62')}</td>
                     <td>СТМ E006 (ISO 1133)</td>
                 </tr>
-            </tbody>
+            </motion.tbody>
 
-        </table>
+        </motion.table>
     )
 };
 

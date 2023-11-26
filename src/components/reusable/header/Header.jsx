@@ -96,7 +96,11 @@ const Header = ({ toContact, toProduct }) => {
                         exit={'exit'}
                         transition={{ duration: 0.5 }}
                     >
-                        <AnimatedMenu setIsOpen={closeOnClickOutSide} toContact={toContact} />
+                        <AnimatedMenu 
+                        setIsOpen={closeOnClickOutSide} 
+                        toContact={toContact} 
+                        toProduct={toProduct}
+                        />
                     </motion.div>
 
                 }

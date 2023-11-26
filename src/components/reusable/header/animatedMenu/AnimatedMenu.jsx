@@ -1,15 +1,18 @@
 import style from "./AnimatedMenu.module.scss"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { routes } from "../../../../routes";
 import LngSelector from "../languageSelector/LngSelector";
 import { useEffect, useRef } from "react";
 
-const AnimatedMenu = ({ setIsOpen, toContact }) => {
+const AnimatedMenu = ({ setIsOpen, toContact, toProduct}) => {
 
     const closeMenuHandler = () => {setIsOpen()}
     const { t } = useTranslation()
     const menuRef = useRef(null)
+    const navigate = useNavigate()
+
+
     const handleClickOutside = (event) => {
         if (!menuRef.current) return
         if (!menuRef.current.contains(event.target)) {
@@ -37,7 +40,12 @@ const AnimatedMenu = ({ setIsOpen, toContact }) => {
 
             <ul >
                 <li>
-                    <Link className={style.link} to={routes.MAIN } onClick={()=>{closeMenuHandler()}}>
+                    <Link className={style.link} to={routes.MAIN } onClick={()=>{
+                        
+                        closeMenuHandler()
+                        toProduct()
+                        
+                        }}>
                         {t("header.product")}
                     </Link>
                 </li>
@@ -58,7 +66,9 @@ const AnimatedMenu = ({ setIsOpen, toContact }) => {
                 </li>
                 <li>
                     <Link className={style.link}
+                    to={routes.MAIN}
                     onClick={()=>{
+                        
                         toContact()
                         closeMenuHandler()
                     }}
