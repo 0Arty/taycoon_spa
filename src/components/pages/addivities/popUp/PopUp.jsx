@@ -1,7 +1,6 @@
 import style from "./PopUp.module.scss"
 import { useDispatch, useSelector } from "react-redux";
 import { closePopUp } from "../../../../store/slices/addivitiesSlice";
-import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useRef } from "react";
 import Heading from "./heading/Heading";
@@ -24,28 +23,10 @@ const PopUp = () => {
     if (!blockRef.current.contains(e.target)) closePopUpHandler()
   }
 
-  const variableForAnimation = {
-    init: {
-      opacity: 0
-    },
-    animate: {
-      opacity: 1,
-      backdropFilter: 'blur(2.5px)',
-      backgroundColor: 'rgba(6, 65, 63, 0.80)',
-    },
-    exit: {
-      opacity: 0,
-    }
-  }
   const { t } = useTranslation()
   return (
-    <AnimatePresence >
-      {isOpen && <motion.div className={style.background}
-        variants={variableForAnimation}
-        initial={'init'}
-        animate={'animate'}
-        exit={'exit'}
-        transition={{ duration: 0.25 }}
+    < >
+      {isOpen && <div className={style.background}
         onClick={(e) => OutsideClick(e)}
 
       >
@@ -80,8 +61,8 @@ const PopUp = () => {
             paragraph={t(`addPage.${article}.paragraphs.saving`)}
           />
         </div>
-      </motion.div>}
-    </AnimatePresence>
+      </div>}
+    </>
   )
 };
 
