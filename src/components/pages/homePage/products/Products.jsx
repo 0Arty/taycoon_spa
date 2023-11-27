@@ -1,14 +1,13 @@
-import classNames from "classnames";
 import style from "./Products.module.scss"
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { routes } from "../../../../routes";
 import masterbatchImage from '../../../../assets/homepage/menu/masterbatch.png'
 import netImage from '../../../../assets/homepage/menu/net.png'
 import addivitiesImage from '../../../../assets/homepage/menu/addivites.jpg'
 import compositesImage from '../../../../assets/homepage/menu/composites.png'
-import { useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
+import { AnimatePresence} from "framer-motion";
 import Product from "./Product";
 
 const Products = ({ props }) => {

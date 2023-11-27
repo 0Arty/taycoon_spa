@@ -2,18 +2,27 @@ import './i18n/index.js'
 import style from "./App.module.scss"
 import { routes } from "./routes/index.js";
 import { Route, Routes } from "react-router-dom";
-import { useRef } from "react";
+import { Suspense, lazy, useRef } from "react";
 
-import HomePage from "./components/pages/homePage/HomePage";
-import MasterbatchPage from "./components/pages/masterbatch/MasterbatchPage";
-import Net from "./components/pages/net/Net.jsx";
-import Header from "./components/reusable/header/Header";
-import Addivities from "./components/pages/addivities/Addivities.jsx";
-import Composites from "./components/pages/composites/Composites.jsx";
-import About from "./components/pages/about/About.jsx";
-import Certificates from './components/pages/certificates/Certificates.jsx';
-import Clients from './components/pages/clients/Clients.jsx';
+// import HomePage from "./components/pages/homePage/HomePage";
+// import MasterbatchPage from "./components/pages/masterbatch/MasterbatchPage";
+// import Net from "./components/pages/net/Net.jsx";
+// import Header from "./components/reusable/header/Header";
+// import Addivities from "./components/pages/addivities/Addivities.jsx";
+// import Composites from "./components/pages/composites/Composites.jsx";
+// import About from "./components/pages/about/About.jsx";
+// import Certificates from './components/pages/certificates/Certificates.jsx';
+// import Clients from './components/pages/clients/Clients.jsx';
 
+const HomePage = lazy(() => import("./components/pages/homePage/HomePage"))
+const MasterbatchPage = lazy(() => import("./components/pages/masterbatch/MasterbatchPage"))
+const Net = lazy(() => import("./components/pages/net/Net.jsx"))
+const Header = lazy(() => import("./components/reusable/header/Header"))
+const Addivities = lazy(() => import("./components/pages/addivities/Addivities.jsx"))
+const Composites = lazy(() => import("./components/pages/composites/Composites.jsx"))
+const About = lazy(() => import("./components/pages/about/About.jsx"))
+const Certificates = lazy(() => import('./components/pages/certificates/Certificates.jsx'))
+const Clients = lazy(() => import('./components/pages/clients/Clients.jsx'))
 const App = ({ props }) => {
 
   const refContact = useRef(null)
@@ -23,20 +32,49 @@ const App = ({ props }) => {
 
   return (
     <div className={style.box}>
-
-
-
-      <Header toContact={toContact} toProduct={toProduct}/>
+      <Header toContact={toContact} toProduct={toProduct} />
       <Routes >
-        <Route path={routes.MAIN} element={<HomePage ref={refHomePage} refContact={refContact} />} />
-        <Route path={routes.MASTERBATCH} element={<MasterbatchPage />} />
-        <Route path={routes.PACKING_NET} element={<Net />} />
-        <Route path={routes.ADDITIVES} element={<Addivities />} />
-        <Route path={routes.COMPOSITES} element={<Composites />} />
-        <Route path={routes.ABOUT} element={<About />} />
-        <Route path={routes.CERTIFICATES} element={<Certificates />} />
-        <Route path={routes.CLIENTS} element={<Clients />} />
-        
+        <Route path={routes.MAIN} element={
+          <Suspense fallback={<h1>Loading...</h1>}>
+            <HomePage ref={refHomePage} refContact={refContact} />
+          </Suspense>
+        } />
+        <Route path={routes.MASTERBATCH} element={
+          <Suspense fallback={<h1>Loading...</h1>}>
+            <MasterbatchPage />
+          </Suspense>
+        } />
+        <Route path={routes.PACKING_NET} element={
+          <Suspense fallback={<h1>Loading...</h1>}>
+            <Net />
+          </Suspense>
+        } />
+        <Route path={routes.ADDITIVES} element={
+          <Suspense fallback={<h1>Loading...</h1>}>
+            <Addivities />
+          </Suspense>
+        } />
+        <Route path={routes.COMPOSITES} element={
+          <Suspense fallback={<h1>Loading...</h1>}>
+            <Composites />
+          </Suspense>
+        } />
+        <Route path={routes.ABOUT} element={
+          <Suspense fallback={<h1>Loading...</h1>}>
+            <About />
+          </Suspense>
+        } />
+        <Route path={routes.CERTIFICATES} element={
+          <Suspense fallback={<h1>Loading...</h1>}>
+            <Certificates />
+          </Suspense>
+        } />
+        <Route path={routes.CLIENTS} element={
+          <Suspense fallback={<h1>Loading...</h1>}>
+            <Clients />
+          </Suspense >
+        } />
+
         {/* <Route path='*' element={NotFound}/> */}
       </Routes>
     </div>

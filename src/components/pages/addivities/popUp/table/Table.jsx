@@ -1,4 +1,3 @@
-import { useSelector } from "react-redux";
 import style from "./Table.module.scss"
 
 const Table = ({ article, t, parameters }) => {

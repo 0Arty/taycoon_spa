@@ -18,7 +18,7 @@ const Composites = ({ props }) => {
                 <h4>
                     {t('compositesPage.text')}
                 </h4>
-                <a href={pdf} target="_blank">
+                <a href={pdf} target="_blank" rel="noreferrer">
                     <button >
 
                         <span>{t('compositesPage.download')}</span>

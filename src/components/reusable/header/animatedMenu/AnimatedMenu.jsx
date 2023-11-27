@@ -1,5 +1,5 @@
 import style from "./AnimatedMenu.module.scss"
-import { Link, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { routes } from "../../../../routes";
 import LngSelector from "../languageSelector/LngSelector";
@@ -10,7 +10,6 @@ const AnimatedMenu = ({ setIsOpen, toContact, toProduct}) => {
     const closeMenuHandler = () => {setIsOpen()}
     const { t } = useTranslation()
     const menuRef = useRef(null)
-    const navigate = useNavigate()
 
 
     const handleClickOutside = (event) => {
