@@ -27,7 +27,7 @@ export const homePageEN = {
         "title": "About us",
         cards: {
             "company": "About our company",
-            "company subtitle": "For more than 25 years, Taycoon has been a reliable and qualified manufacturer of high-quality process additives, composites, ferrous and non-ferrous superconcentrates...",
+            "company subtitle": "For more than 25 years, Taycoon has been a reliable and qualified manufacturer of high-quality process additives, composites, ferrous and non-ferrous masterbatches...",
             "certificates": "Certificates",
             "our clients": "Our clients",
             "client list": "«Intelkom LLC», «Ethylenservice» LLC, «Goldpack LLC», «Ukrainian Sources» LLC...",

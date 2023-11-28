@@ -48,18 +48,19 @@
             justify-content: center;
 
             button {
-                width: 25%;
+                width: 20%;
                 outline: none;
                 /* Для синий ободки */
                 border: 0;
                 background: transparent;
                 text-align: center;
                 color: var(--white, #FFF);
-                font-size: 24px;
+                font-size: 20px;
                 font-style: normal;
                 font-weight: 800;
                 line-height: normal;
                 transition: 0.3s;
+                padding: 0 5px;
 
                 &:hover {
                     text-decoration-line: underline;
@@ -84,8 +85,9 @@
             }
 
             .btns {
+
                 button {
-                    width: 23%;
+                    width: 25%;
                 }
 
                 width: 100%;
@@ -119,6 +121,7 @@
                 gap: 30px;
                 right: 40px;
                 padding-bottom: 60px;
+                bottom: 50px;
                 button {
                     font-size: 18px;
                     text-align: right;

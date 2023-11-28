@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const Menu = ({ transition }) => {
 
     const { t } = useTranslation()
-    const { toVegetable, toCrimping, toToys, toGlass } = transition
+    const { toVegetable, toCrimping, toToys, toGlass, toTree } = transition
 
 
     return (
@@ -28,6 +28,9 @@ const Menu = ({ transition }) => {
                     </button>
                     <button onClick={toGlass}>
                         {t('netPage.buttons.glass')}
+                    </button>
+                    <button onClick={toTree}>
+                        {t('netPage.buttons.tree')}
                     </button>
                 </div>
             </div>

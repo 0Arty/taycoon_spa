@@ -1,5 +1,5 @@
 export const addivitiesEN = {
-    "heading": "Additives to polymers",
+    "heading": "Additives for polymers",
     buttons: {
         "0": "Antiblock",
         "1": "Antistatic",

@@ -7,6 +7,7 @@ import Menu from "./menu/Menu";
 import Toys from "./toys/Toys";
 import Vegetables from "./vegetables/Vegetables";
 import Cards from "./cards/Cards";
+import Tree from "./tree/Tree";
 
 const Net = ({ props }) => {
 
@@ -15,18 +16,21 @@ const Net = ({ props }) => {
     const refCrimping = useRef(null)
     const refToys = useRef(null)
     const refGlass = useRef(null)
+    const refTree = useRef(null)
 
     useEffect(() => refPage.current?.scrollIntoView({ block: 'start', behavior: 'smooth' }), [])
     const toVegetable = () => refVegetable.current?.scrollIntoView({ block: 'center', behavior: 'smooth' })
     const toCrimping = () => refCrimping.current?.scrollIntoView({ block: 'center', behavior: 'smooth' })
     const toToys = () => refToys.current?.scrollIntoView({ block: 'center', behavior: 'smooth' })
     const toGlass = () => refGlass.current?.scrollIntoView({ block: 'center', behavior: 'smooth' })
+    const toTree = () => refTree.current?.scrollIntoView({ block: 'center', behavior: 'smooth' })
 
     const transition = {
         toVegetable,
         toCrimping,
         toToys,
-        toGlass
+        toGlass,
+        toTree
     }
 
     return (
@@ -39,6 +43,7 @@ const Net = ({ props }) => {
             <Toys ref={refToys} />
             <hr />
             <Glass ref={refGlass} />
+            <Tree ref={refTree}/>
             <Cards />
             <Footer />
         </div>
