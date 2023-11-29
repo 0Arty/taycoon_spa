@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/taycoon_spa/static/css/main.ab753f89.css",
-    "main.js": "/taycoon_spa/static/js/main.aba664b0.js",
+    "main.js": "/taycoon_spa/static/js/main.f342dfcb.js",
     "static/css/45.0e094987.chunk.css": "/taycoon_spa/static/css/45.0e094987.chunk.css",
     "static/js/45.81760932.chunk.js": "/taycoon_spa/static/js/45.81760932.chunk.js",
     "static/css/445.43af5b51.chunk.css": "/taycoon_spa/static/css/445.43af5b51.chunk.css",
@@ -13,7 +13,7 @@
     "static/css/798.bea602e5.chunk.css": "/taycoon_spa/static/css/798.bea602e5.chunk.css",
     "static/js/798.4d0c5092.chunk.js": "/taycoon_spa/static/js/798.4d0c5092.chunk.js",
     "static/css/19.7f6e00f2.chunk.css": "/taycoon_spa/static/css/19.7f6e00f2.chunk.css",
-    "static/js/19.2fb4c44f.chunk.js": "/taycoon_spa/static/js/19.2fb4c44f.chunk.js",
+    "static/js/19.c4497b5b.chunk.js": "/taycoon_spa/static/js/19.c4497b5b.chunk.js",
     "static/css/167.e5277ab1.chunk.css": "/taycoon_spa/static/css/167.e5277ab1.chunk.css",
     "static/js/167.1b921da0.chunk.js": "/taycoon_spa/static/js/167.1b921da0.chunk.js",
     "static/css/997.2ff83d42.chunk.css": "/taycoon_spa/static/css/997.2ff83d42.chunk.css",
@@ -22,7 +22,7 @@
     "static/js/459.d7c87b5d.chunk.js": "/taycoon_spa/static/js/459.d7c87b5d.chunk.js",
     "static/js/889.9c2ad1e7.chunk.js": "/taycoon_spa/static/js/889.9c2ad1e7.chunk.js",
     "static/media/tree.svg": "/taycoon_spa/static/media/tree.77649146540f98903a5c9010c57b33c1.svg",
-    "static/media/composites_en.pdf": "/taycoon_spa/static/media/composites_en.ae83a860301ec1ff02e3.pdf",
+    "static/media/composites_en.pdf": "/taycoon_spa/static/media/composites_en.85104702cc5948bc489d.pdf",
     "static/media/composites_ua.pdf": "/taycoon_spa/static/media/composites_ua.cf28a2f1f8ba6521f403.pdf",
     "static/media/san_vegetables_p1.jpg": "/taycoon_spa/static/media/san_vegetables_p1.bf9bb7734c3fa008e728.jpg",
     "static/media/composites.png": "/taycoon_spa/static/media/composites.aa0cfc97189b3271f661.png",
@@ -91,7 +91,7 @@
     "static/media/down.svg": "/taycoon_spa/static/media/down.02aa2c52a844ced1f10315279c67057c.svg",
     "static/media/Selector.svg": "/taycoon_spa/static/media/Selector.8371e3a16d81cd101542cf65f76e1f57.svg",
     "main.ab753f89.css.map": "/taycoon_spa/static/css/main.ab753f89.css.map",
-    "main.aba664b0.js.map": "/taycoon_spa/static/js/main.aba664b0.js.map",
+    "main.f342dfcb.js.map": "/taycoon_spa/static/js/main.f342dfcb.js.map",
     "45.0e094987.chunk.css.map": "/taycoon_spa/static/css/45.0e094987.chunk.css.map",
     "45.81760932.chunk.js.map": "/taycoon_spa/static/js/45.81760932.chunk.js.map",
     "445.43af5b51.chunk.css.map": "/taycoon_spa/static/css/445.43af5b51.chunk.css.map",
@@ -103,7 +103,7 @@
     "798.bea602e5.chunk.css.map": "/taycoon_spa/static/css/798.bea602e5.chunk.css.map",
     "798.4d0c5092.chunk.js.map": "/taycoon_spa/static/js/798.4d0c5092.chunk.js.map",
     "19.7f6e00f2.chunk.css.map": "/taycoon_spa/static/css/19.7f6e00f2.chunk.css.map",
-    "19.2fb4c44f.chunk.js.map": "/taycoon_spa/static/js/19.2fb4c44f.chunk.js.map",
+    "19.c4497b5b.chunk.js.map": "/taycoon_spa/static/js/19.c4497b5b.chunk.js.map",
     "167.e5277ab1.chunk.css.map": "/taycoon_spa/static/css/167.e5277ab1.chunk.css.map",
     "167.1b921da0.chunk.js.map": "/taycoon_spa/static/js/167.1b921da0.chunk.js.map",
     "997.2ff83d42.chunk.css.map": "/taycoon_spa/static/css/997.2ff83d42.chunk.css.map",
@@ -114,6 +114,6 @@
   },
   "entrypoints": [
     "static/css/main.ab753f89.css",
-    "static/js/main.aba664b0.js"
+    "static/js/main.f342dfcb.js"
   ]
 }
