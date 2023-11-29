@@ -34,7 +34,7 @@ export const packingNetEN = {
     tree : {
         "heading" : "Net for packing firewood",
         "text1" : "Provides reliable fixation and convenient delivery of firewood",
-        "text2" : "The extra strength and resistance to environmental influences make extruded mesh the optimal choice for firewood packaging and storage",
+        "text2" : "The extra strength and resistance to environmental influences make extruded net the optimal choice for firewood packaging and storage",
     },
     glass: {
         "heading" : "Protective net for glass containers, bottles, furniture and metal products",

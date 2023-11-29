@@ -11,7 +11,7 @@ export const homePageUK = {
     },
     cards: {
         "saving": "Економія",
-        "saving subtitle": "- знижки для оптових покупців, можливе відстрочення платежу",
+        "saving subtitle": "- знижки для оптових покупців, можлива відстрочка платежу",
         "delivery": "Доставка",
         "delivery subtitle": "- доставляємо по всій Україні",
         "guarantees": "Гарантії",

@@ -1,14 +1,14 @@
 export const masterbatchEN = {
     menu: {
-        "heading":"Mastebatches for polymers",
+        "heading":"Masterbatches for polymers",
         "white":"White",
         "black":"Black",
         "colors":"Colour",
     },
     white: {
-        "heading": "White mastebatches for polymers",
-        "subheading": "Polyethylene superconcentrate for the production of films, injection moulding and extrusion products.",
-        "p1": "- is a highly filled white superconcentrate designed to fill high quality films for injection moulding and extrusion products",
+        "heading": "White masterbatches for polymers",
+        "subheading": "Polyethylene masterbatches for the production of films, injection moulding and extrusion products.",
+        "p1": "- is a highly filled white masterbatches designed to fill high quality films for injection moulding and extrusion products",
         "p2": "Suitable for use in plastic products in contact with food",
         table: {
             "11": "Title",
@@ -28,21 +28,21 @@ export const masterbatchEN = {
         "conclusion": "The use of automatic dosing devices is recommended for adding PLASWITE® PE7024 to plastics. This can be done either immediately before production or before pre-mixing the plastic. The amount of super concentrate to be added depends on the specific requirements of the final product. Typically, the standard level of colourant addition ranges from 1% to 5%, but this can be adjusted to suit the needs of a particular project or manufacturer",
     },
     black: {
-        "heading": "Black mastebatches for polymers",
+        "heading": "Black masterbatches for polymers",
         "subheading": "Polyolefin group",
-        "p1": "Black dye - a concentrate of black pigment in a polymer matrix with a different percentage of pigment from 20% to 50% (fine carbon black)",
+        "p1": "Black Masterbatch - a concentrate of black pigment in a polymer matrix with a different percentage of pigment from 20% to 50% (fine carbon black)",
         table: {
             "download": "Download",
         }
     },
     colors: {
-        "heading": "Coloured mastebatches for polymers",
+        "heading": "Colorant masterbatches for polymers",
         "subheading": "We develop colours of any complexity",
-        "p1": "Coloured mastebatches from Taycoon are produced in accordance with the existing range or developed according to customer requests in the shortest possible time in accordance with international colour catalogues RAL, PANTONE or under the customer's colour standard, taking into account the operating conditions of finished products",
-        "p2": "Our laboratory develops colours of any complexity: metallic colours and their shades, chameleon colours, translucent, fluorescent and pearlescent colours",
+        "p1": "Colorants for masterbatches from Taycoon are produced in various colours of regular line and according customised request taking into account operating conditions. Our company proceed requests in the shortest terms using  international color catalogues RAL and PANTONE",
+        "p2": "Available to order colors of any complexity, including: metallic colours and their shades, chameleon colours, translucent, fluorescent and pearlescent colours",
     },
     methods:{
-        "heading" : "We develop masterbatch of mastebatches that are produced by specialised methods:",
+        "heading" : "We develop masterbatches that are produced by specialised methods:",
         cards:{
             card1:{
                 "heading":"Injection moulding",

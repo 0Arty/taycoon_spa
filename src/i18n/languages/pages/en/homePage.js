@@ -1,8 +1,8 @@
 export const homePageEN = {
     products: {
-        "masterbatch": "Dyes for polymers",
-        "net": "Extruded mesh",
-        "addition": "Additives to polymers",
+        "masterbatch": "Masterbatches for polymers",
+        "net": "Packing net",
+        "addition": "Additives for polymers",
         "composites": "Composites",
 
     },
@@ -11,17 +11,17 @@ export const homePageEN = {
     },
     cards: {
         "saving": "Saving",
-        "saving subtitle": "- discounts for wholesale buyers, possible deferred payment",
+        "saving subtitle": "- discounts for wholesellers, delayed payment possible",
         "delivery": "Delivery",
         "delivery subtitle": "- we deliver all over Ukraine",
         "guarantees": "Guarantees",
-        "guarantees subtitle": "- we fulfil orders on time and 100% of the time",
+        "guarantees subtitle": "- we fulfill orders on time and 100% of the time",
         "fabric": "Manufacturing",
-        "fabric subtitle": "- development of products taking into account the specifics, requirements and technology of the customer",
+        "fabric subtitle": "- our R&D (research department розшифровується ) develops products according your demands",
         "lab": "Laboratory",
         "lab subtitle": "- individual laboratory analyses and tests",
         "support": "Support",
-        "support subtitle": "- free consultation on the technical application of various thermoplastic processing methods",
+        "support subtitle": "- 24/7 free support consultung in applications different methods of termoplastic usage",
     },
     info: {
         "title": "About us",

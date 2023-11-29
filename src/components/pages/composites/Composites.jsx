@@ -1,11 +1,18 @@
 import style from "./Composites.module.scss"
 import image from '../../../assets/homepage/menu/composites.png'
+
+import i18n from "../../../i18n";
 import { useTranslation } from "react-i18next";
+import { LOCALS } from "../../../i18n/constants";
+
 import { ReactComponent as Download } from '../../../assets/masterbatchpage/pdfs/pdfLogo.svg'
-import pdf from '../../../assets/composites/composites.pdf'
+import pdf_ua from '../../../assets/composites/composites_ua.pdf'
+import pdf_en from '../../../assets/composites/composites_en.pdf'
+
 const Composites = ({ props }) => {
 
     const { t } = useTranslation()
+
 
     return (
         <div className={style.box}>
@@ -18,7 +25,7 @@ const Composites = ({ props }) => {
                 <h4>
                     {t('compositesPage.text')}
                 </h4>
-                <a href={pdf} target="_blank" rel="noreferrer">
+                <a href={i18n.language === LOCALS.EN ? pdf_en : pdf_ua} target="_blank" rel="noreferrer">
                     <button >
 
                         <span>{t('compositesPage.download')}</span>
@@ -32,5 +39,6 @@ const Composites = ({ props }) => {
         </div>
     )
 };
+
 
 export default Composites;
