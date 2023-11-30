@@ -31,23 +31,23 @@ const Colors = ({ props }, ref) => {
         initial='hidden'
         whileInView='visible'
         variants={contentAnimation}
-        custom={{ delay: 1, startPosition: -40 }}
+        custom={{ delay: 1, startPosition: -30 }}
       >
-        <ImageBlock image={ColorImg} text={t('masterbatchPage.colors.heading')} paragraph={t('masterbatchPage.colors.subheading')} />
+        <ImageBlock image={ColorImg} text={t('masterbatchPage.colors.heading')} paragraph={''} />
       </motion.div>
 
       <motion.p className={classNames(style.paragraph1, style.paragraph)}
         initial='hidden'
         whileInView='visible'
         variants={contentAnimation}
-        custom={{ delay: 1, startPosition: 40 }}
+        custom={{ delay: 1, startPosition: 30 }}
       >{t('masterbatchPage.colors.p1')}</motion.p>
 
       <motion.p className={classNames(style.paragraph2, style.paragraph)}
         initial='hidden'
         whileInView='visible'
         variants={contentAnimation}
-        custom={{ delay: 2, startPosition: -40 }}
+        custom={{ delay: 2, startPosition: -30 }}
       >{t('masterbatchPage.colors.p2')}</motion.p>
 
       <AbstractSVG className={style.AbstractSVG} />

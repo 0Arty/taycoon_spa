@@ -38,8 +38,8 @@ export const masterbatchEN = {
     colors: {
         "heading": "Colorant masterbatches for polymers",
         "subheading": "We develop colours of any complexity",
-        "p1": "Colorants for masterbatches from Taycoon are produced in various colours of regular line and according customised request taking into account operating conditions. Our company proceed requests in the shortest terms using  international color catalogues RAL and PANTONE",
-        "p2": "Available to order colors of any complexity, including: metallic colours and their shades, chameleon colours, translucent, fluorescent and pearlescent colours",
+        "p1": "Masterbatches are tailored made based on the sempless of the customers or using international color catalogues RAL and PANTONE",
+        "p2": "We are produced different kinds of masterbatches including colors with metallic colours and their shades, chameleon, translucent, fluorescent and pearl effect",
     },
     methods:{
         "heading" : "We develop masterbatches that are produced by specialised methods:",

@@ -1,10 +1,10 @@
 export const aboutEN = {
-    "subheading":"- reliable manufacturer of a high-quality technological additives, superconcentrates for the production of polymer products",
+    "subheading":"- reliable manufacturer of a high-quality additives, masterbatches for the  polymer industry",
     info:{
         "guarantees":"Taycoon company established over 25 years ago. Our trademark proofs reliability and quality. all manufacturing processes complies  with ISO 9001:2015 standards",
-        "factory":"We specialise in the production of high-quality additives, composites, superconcentrates (of any colour) intended for the production of polymer products. We also produce extruded mesh sleeves for any needs",
-        "advantage":"Our main advantage is an individual approach to our customers. We are ready to provide advice and manufacture the required mesh or additive, which will be specialised for your needs. Your order will be accompanied by our technologist",
-        "lab":"Our R&D department develops colours and provide quality control according customers request.after receiving an order we develop a recipe in the shortest time and provide samples accordingly",
+        "factory":"We specialise in the production of high-quality additives, composites, masterbatches (of any colour) intended for the production of polymer products. We also produce extruded net sleeves for any needs",
+        "advantage":"Our main advantage is an individual approach to our customers. We are ready to provide advice and manufacture the required net or additive, which will be specialised for your needs. Your order will be accompanied by our technologist",
+        "lab":"Our R&D  develops colours and provide quality control according customers request.after receiving an order we develop a recipe in the shortest time and provide samples accordingly",
         "ukr":"Production lines of Taycoon company located in Ukraine, that means fast delivery and prompt response to customers requests. The quality of our products meets European standards, as they are manufactured on innovative equipment from the German company LEISTRITZ Extrusionstechnik GmbH and are thoroughly tested",
     },
     eco:{

@@ -14,7 +14,7 @@ const White = ({ props }, ref) => {
   const contentAnimation = {
     imageBlock: {
       hidden: {
-        x: -400,
+        x: -300,
         opacity: 0,
       },
       visible: custom => ({

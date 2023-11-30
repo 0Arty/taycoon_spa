@@ -9,13 +9,13 @@ export const packingNetEN = {
 
     },
     vegatbles: {
-        "heading" : "Net sleeve for packing fruit and vegetables",
+        "heading" : "For packing fruit and vegetables",
         "text1" : "Designed for packing vegetables/fruits weighing up to 7 kg",
-        "text2" : "Strength and elasticity ensure the integrity of the product from the moment of packaging to the consumer",
+        "text2" : "Strength and elasticity ensure the integrity of the product from the moment of packaging to the customer",
         "text3" : "The net can be used for both manual and automatic packaging",
     },
     crimping: {
-        "heading" : "Sleeve net for corrugating sausage casings",
+        "heading" : "Sausage casings",
         characteristics:{
             "text":"Technical characteristics:",
             "char1":"Sleeve width - 190mm",
@@ -27,7 +27,7 @@ export const packingNetEN = {
         "text2" : "The width of the netes corresponds to the calibre of the shell manufacturers",
     },
     toys: {
-        "heading" : "Net sleeve for packing toys",
+        "heading" : "Packing toys",
         "text1" : "It is possible to select the colour and size for a specific toy or a set of them, regardless of size",
         "text2" : "It has high strength and elasticity due to special manufacturing technology",
     },

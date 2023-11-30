@@ -24,7 +24,7 @@ const Cards = ({ props }) => {
             initial='hidden'
             whileInView='visible'
             variants={contentAnimation}
-            custom={{ delay: 1, startPosition: 40 }}
+            custom={{ delay: 1, startPosition: 30 }}
         >
             <div className={style.card}>
 

@@ -10,54 +10,59 @@
     font-weight: 500;
     line-height: normal;
 
-    td {
-        height: 50px;
-        text-align: center;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.05);
+    tbody {
 
-        &:nth-child(1) {
-            width: 25%;
-        }
+        td {
+            
+            height: 50px;
+            text-align: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.05);
+            
+            &:nth-child(1) {
+                width: 25%;
+            }
+            
+            &:nth-child(2) {
+                width: 40%;
+            }
 
-        &:nth-child(2) {
-            width: 40%;
-        }
+            &:nth-child(3) {
+                width: 35%;
+            }
+            
+            a {
+                text-decoration: none;
+                
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    vertical-align: middle;
+                    text-align: center;
+                    color: #000;
+                    color: #06413F;
+                    transition: 0.3s;
 
-        &:nth-child(3) {
-            width: 35%;
-        }
-
-        a {
-            text-decoration: none;
-
-            div {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                vertical-align: middle;
-                text-align: center;
-                color: #000;
-                transition: 0.3s;
-
-                span {
-                    margin-right: 20px;
-
-                }
-
-                &:hover {
                     span {
-                        cursor: pointer;
-                        transition: 0.1s;
-                        color: #06413F;
+                        margin-right: 20px;
 
-                        text-decoration: underline;
+                    }
+
+                    &:hover {
+                        span {
+                            cursor: pointer;
+                            transition: 0.1s;
+                            color: #06413F;
+
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
         }
-    }
 
+    }
 
 }
 
@@ -65,11 +70,19 @@
     .table {
         min-height: 50px;
         border-spacing: 5px;
-        font-size: 14px;
 
-        td {
-            padding: 10px;
-            hyphens: auto;
+        tbody {
+            font-size: 14px;
+            td {
+                padding: 10px;
+                hyphens: auto;
+                a{
+                    text-decoration: none;
+                    text-decoration: underline;
+                    color: #06413F;
+
+                }
+            }
 
         }
     }

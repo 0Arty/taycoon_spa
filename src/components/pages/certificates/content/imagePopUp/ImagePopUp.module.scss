@@ -13,17 +13,80 @@
 
     backdrop-filter: blur(2.5px);
     background-color: rgba(6, 65, 63, 0.80);
+
     .box {
         height: 90%;
-
-        .image {
+        position: relative;
+        .wrapper {
             height: 100%;
+            div {
+                height: 100%;
+                width: 100%;
+
+                .image {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            
+                button {
+                    width: 50px;
+                    height: 30px;
+                    margin: 0 10px;
+                    border: none;
+                    border-radius: 20px;
+                    font-size: 22px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #056461;
+                    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.50);
+                    color: white;
+                }
+
+                .imageTools {
+                    position: absolute;
+                    z-index: 30;
+                    bottom: 5px;
+                    display: flex;
+                    align-items: end;
+                    justify-content: center;
+                    height: fit-content;
+                    button {
+                        svg {
+                            fill: white;
+                        }
+                    }
+                }
+                
+                .closePopUp {
+                    position: absolute;
+                    width: fit-content;
+                    right: 10px;
+                    top: 10px;
+                    z-index: 30;
+                    
+                    display: flex;
+                    align-items: start;
+                    justify-content: end;
+                    height: fit-content;
+                }
+            
         }
+
     }
 
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 520px) {
+    .container {
+        .box {
+            height: 75%;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
     .container {
         .box {
             height: 75%;

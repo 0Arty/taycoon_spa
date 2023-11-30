@@ -18,6 +18,7 @@ const PopUp = () => {
 
   const closePopUpHandler = () => { dispatch(closePopUp()) }
   const parameters = useSelector(state => state.addivitiesSlice.popUp.parameters)
+  
   const OutsideClick = (e) => {
     if (!blockRef.current) return;
     if (!blockRef.current.contains(e.target)) closePopUpHandler()

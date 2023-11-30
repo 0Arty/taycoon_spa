@@ -1,7 +1,8 @@
 import { useTranslation } from "react-i18next";
 import style from "./TableBlock.module.scss"
 import { motion } from "framer-motion";
-
+import { ReactComponent as PDFLogo } from "../../../../../assets/masterbatchpage/pdfs/pdfLogo.svg";
+import pdf2155 from '../../../../../assets/masterbatchpage/pdfs/2155.pdf'
 const TableBlock = ({ props }) => {
 
     const { t } = useTranslation()
@@ -9,7 +10,7 @@ const TableBlock = ({ props }) => {
     const contentAnimation = {
 
         hidden: {
-            x: -400,
+            x: -300,
             opacity: 0,
         },
         visible: custom => ({
@@ -24,9 +25,7 @@ const TableBlock = ({ props }) => {
     }
 
     return (
-        <motion.table className={style.table}
-
-        >
+        <motion.table className={style.table}>
             <motion.tbody
                         initial='hidden'
                         whileInView='visible'
@@ -34,37 +33,20 @@ const TableBlock = ({ props }) => {
                         custom={1}
             >
                 <tr>
-                    <td>{t('masterbatchPage.white.table.11')}</td>
-                    <td>{t('masterbatchPage.white.table.12')}</td>
-                    <td>{t('masterbatchPage.white.table.13')}</td>
+                    <td>PLASBLACK РЕ2155</td>
+                    <td>
+                        <a href={pdf2155}
+                            target="_blank"
+                            rel="noreferrer">
+                            <div>
+                                <span>{t('masterbatchPage.black.table.download')} </span>
+                                <PDFLogo />
+                            </div>
+                        </a>
+                    </td>
                 </tr>
-                <tr>
-                    <td>{t('masterbatchPage.white.table.21')}</td>
-                    <td>Ре</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>{t('masterbatchPage.white.table.31')}</td>
-                    <td>{t('masterbatchPage.white.table.32')}</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>{t('masterbatchPage.white.table.41')}</td>
-                    <td>{t('masterbatchPage.white.table.42')}</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>{t('masterbatchPage.white.table.51')}</td>
-                    <td>{t('masterbatchPage.white.table.52')}</td>
-                    <td>CTM EO23</td>
-                </tr>
-                <tr>
-                    <td>{t('masterbatchPage.white.table.61')}</td>
-                    <td>{t('masterbatchPage.white.table.62')}</td>
-                    <td>СТМ E006 (ISO 1133)</td>
-                </tr>
+                
             </motion.tbody>
-
         </motion.table>
     )
 };

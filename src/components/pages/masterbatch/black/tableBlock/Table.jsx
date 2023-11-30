@@ -27,7 +27,7 @@ const Table = ({ text }) => {
                 initial='hidden'
                 whileInView='visible'
                 variants={contentAnimation}
-                custom={{ delay: 1, animationPosition: -40 }}
+                custom={{ delay: 1, animationPosition: -30 }}
             >
 
                 <tr>

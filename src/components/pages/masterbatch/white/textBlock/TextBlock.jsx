@@ -5,7 +5,7 @@ const TextBlock = ({ t }) => {
     const contentAnimation = {
         imageBlock: {
           hidden: {
-            x: 400,
+            x: 300,
             opacity: 0,
           },
           visible: custom => ({
