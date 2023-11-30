@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/taycoon_spa/static/css/main.ab753f89.css",
-    "main.js": "/taycoon_spa/static/js/main.f342dfcb.js",
+    "main.js": "/taycoon_spa/static/js/main.b2b9d717.js",
     "static/css/45.0e094987.chunk.css": "/taycoon_spa/static/css/45.0e094987.chunk.css",
     "static/js/45.81760932.chunk.js": "/taycoon_spa/static/js/45.81760932.chunk.js",
-    "static/css/445.43af5b51.chunk.css": "/taycoon_spa/static/css/445.43af5b51.chunk.css",
-    "static/js/445.f5282b23.chunk.js": "/taycoon_spa/static/js/445.f5282b23.chunk.js",
+    "static/css/487.4cc73c97.chunk.css": "/taycoon_spa/static/css/487.4cc73c97.chunk.css",
+    "static/js/487.aea14371.chunk.js": "/taycoon_spa/static/js/487.aea14371.chunk.js",
     "static/css/709.6008e5af.chunk.css": "/taycoon_spa/static/css/709.6008e5af.chunk.css",
     "static/js/709.4d179ac6.chunk.js": "/taycoon_spa/static/js/709.4d179ac6.chunk.js",
     "static/css/83.44879069.chunk.css": "/taycoon_spa/static/css/83.44879069.chunk.css",
@@ -39,6 +39,7 @@
     "static/media/net.png": "/taycoon_spa/static/media/net.e802bc4707a5f391449b.png",
     "static/media/certificate_ISO_ua_p2.jpg": "/taycoon_spa/static/media/certificate_ISO_ua_p2.f81748d6bd2ec11499f9.jpg",
     "static/media/certificate_ISO_eng_p2.jpg": "/taycoon_spa/static/media/certificate_ISO_eng_p2.2906b5758a00e3c377c4.jpg",
+    "static/media/2155.pdf": "/taycoon_spa/static/media/2155.f4e47ceed53077df40a3.pdf",
     "static/media/consulting_dyes_2015_p2.jpg": "/taycoon_spa/static/media/consulting_dyes_2015_p2.055649f809f218b55d16.jpg",
     "static/media/colors.jpg": "/taycoon_spa/static/media/colors.d473b5a330442425176e.jpg",
     "static/media/consulting_addivities_2013_p2.jpg": "/taycoon_spa/static/media/consulting_addivities_2013_p2.f9682787bd36e9102f0c.jpg",
@@ -91,11 +92,11 @@
     "static/media/down.svg": "/taycoon_spa/static/media/down.02aa2c52a844ced1f10315279c67057c.svg",
     "static/media/Selector.svg": "/taycoon_spa/static/media/Selector.8371e3a16d81cd101542cf65f76e1f57.svg",
     "main.ab753f89.css.map": "/taycoon_spa/static/css/main.ab753f89.css.map",
-    "main.f342dfcb.js.map": "/taycoon_spa/static/js/main.f342dfcb.js.map",
+    "main.b2b9d717.js.map": "/taycoon_spa/static/js/main.b2b9d717.js.map",
     "45.0e094987.chunk.css.map": "/taycoon_spa/static/css/45.0e094987.chunk.css.map",
     "45.81760932.chunk.js.map": "/taycoon_spa/static/js/45.81760932.chunk.js.map",
-    "445.43af5b51.chunk.css.map": "/taycoon_spa/static/css/445.43af5b51.chunk.css.map",
-    "445.f5282b23.chunk.js.map": "/taycoon_spa/static/js/445.f5282b23.chunk.js.map",
+    "487.4cc73c97.chunk.css.map": "/taycoon_spa/static/css/487.4cc73c97.chunk.css.map",
+    "487.aea14371.chunk.js.map": "/taycoon_spa/static/js/487.aea14371.chunk.js.map",
     "709.6008e5af.chunk.css.map": "/taycoon_spa/static/css/709.6008e5af.chunk.css.map",
     "709.4d179ac6.chunk.js.map": "/taycoon_spa/static/js/709.4d179ac6.chunk.js.map",
     "83.44879069.chunk.css.map": "/taycoon_spa/static/css/83.44879069.chunk.css.map",
@@ -114,6 +115,6 @@
   },
   "entrypoints": [
     "static/css/main.ab753f89.css",
-    "static/js/main.f342dfcb.js"
+    "static/js/main.b2b9d717.js"
   ]
 }
