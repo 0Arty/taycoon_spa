@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/taycoon_spa/static/css/main.ab753f89.css",
-    "main.js": "/taycoon_spa/static/js/main.b2b9d717.js",
+    "main.js": "/taycoon_spa/static/js/main.3432cef9.js",
     "static/css/45.0e094987.chunk.css": "/taycoon_spa/static/css/45.0e094987.chunk.css",
     "static/js/45.81760932.chunk.js": "/taycoon_spa/static/js/45.81760932.chunk.js",
     "static/css/487.4cc73c97.chunk.css": "/taycoon_spa/static/css/487.4cc73c97.chunk.css",
@@ -16,11 +16,12 @@
     "static/js/19.c4497b5b.chunk.js": "/taycoon_spa/static/js/19.c4497b5b.chunk.js",
     "static/css/167.e5277ab1.chunk.css": "/taycoon_spa/static/css/167.e5277ab1.chunk.css",
     "static/js/167.1b921da0.chunk.js": "/taycoon_spa/static/js/167.1b921da0.chunk.js",
-    "static/css/997.2ff83d42.chunk.css": "/taycoon_spa/static/css/997.2ff83d42.chunk.css",
-    "static/js/997.d64c01b6.chunk.js": "/taycoon_spa/static/js/997.d64c01b6.chunk.js",
+    "static/css/803.019dd515.chunk.css": "/taycoon_spa/static/css/803.019dd515.chunk.css",
+    "static/js/803.8126ea16.chunk.js": "/taycoon_spa/static/js/803.8126ea16.chunk.js",
     "static/css/459.e66df25d.chunk.css": "/taycoon_spa/static/css/459.e66df25d.chunk.css",
     "static/js/459.d7c87b5d.chunk.js": "/taycoon_spa/static/js/459.d7c87b5d.chunk.js",
     "static/js/889.9c2ad1e7.chunk.js": "/taycoon_spa/static/js/889.9c2ad1e7.chunk.js",
+    "static/js/514.92888c5e.chunk.js": "/taycoon_spa/static/js/514.92888c5e.chunk.js",
     "static/media/tree.svg": "/taycoon_spa/static/media/tree.77649146540f98903a5c9010c57b33c1.svg",
     "static/media/composites_en.pdf": "/taycoon_spa/static/media/composites_en.85104702cc5948bc489d.pdf",
     "static/media/composites_ua.pdf": "/taycoon_spa/static/media/composites_ua.cf28a2f1f8ba6521f403.pdf",
@@ -74,6 +75,7 @@
     "static/media/vector2.svg": "/taycoon_spa/static/media/vector2.a2ee83eb72741b4720913899583e88d6.svg",
     "static/media/vector1.svg": "/taycoon_spa/static/media/vector1.1c38a5f3261516dfb2833a7a2a29e4e5.svg",
     "static/media/laboratory.svg": "/taycoon_spa/static/media/laboratory.6fb6d4f4f9dea76b88d6e71ef3fb6ccd.svg",
+    "static/media/expand.svg": "/taycoon_spa/static/media/expand.0557987f94bf0ecdbaaf8d5d16d42d89.svg",
     "static/media/delivery.svg": "/taycoon_spa/static/media/delivery.86817ae149097390ba7db18a58f5af9a.svg",
     "static/media/atb.svg": "/taycoon_spa/static/media/atb.4a56c747ede80689ca283d84ba9d5f68.svg",
     "static/media/email.svg": "/taycoon_spa/static/media/email.cd62ef399f72e1d1fd953db467abe5fa.svg",
@@ -92,7 +94,7 @@
     "static/media/down.svg": "/taycoon_spa/static/media/down.02aa2c52a844ced1f10315279c67057c.svg",
     "static/media/Selector.svg": "/taycoon_spa/static/media/Selector.8371e3a16d81cd101542cf65f76e1f57.svg",
     "main.ab753f89.css.map": "/taycoon_spa/static/css/main.ab753f89.css.map",
-    "main.b2b9d717.js.map": "/taycoon_spa/static/js/main.b2b9d717.js.map",
+    "main.3432cef9.js.map": "/taycoon_spa/static/js/main.3432cef9.js.map",
     "45.0e094987.chunk.css.map": "/taycoon_spa/static/css/45.0e094987.chunk.css.map",
     "45.81760932.chunk.js.map": "/taycoon_spa/static/js/45.81760932.chunk.js.map",
     "487.4cc73c97.chunk.css.map": "/taycoon_spa/static/css/487.4cc73c97.chunk.css.map",
@@ -107,14 +109,15 @@
     "19.c4497b5b.chunk.js.map": "/taycoon_spa/static/js/19.c4497b5b.chunk.js.map",
     "167.e5277ab1.chunk.css.map": "/taycoon_spa/static/css/167.e5277ab1.chunk.css.map",
     "167.1b921da0.chunk.js.map": "/taycoon_spa/static/js/167.1b921da0.chunk.js.map",
-    "997.2ff83d42.chunk.css.map": "/taycoon_spa/static/css/997.2ff83d42.chunk.css.map",
-    "997.d64c01b6.chunk.js.map": "/taycoon_spa/static/js/997.d64c01b6.chunk.js.map",
+    "803.019dd515.chunk.css.map": "/taycoon_spa/static/css/803.019dd515.chunk.css.map",
+    "803.8126ea16.chunk.js.map": "/taycoon_spa/static/js/803.8126ea16.chunk.js.map",
     "459.e66df25d.chunk.css.map": "/taycoon_spa/static/css/459.e66df25d.chunk.css.map",
     "459.d7c87b5d.chunk.js.map": "/taycoon_spa/static/js/459.d7c87b5d.chunk.js.map",
-    "889.9c2ad1e7.chunk.js.map": "/taycoon_spa/static/js/889.9c2ad1e7.chunk.js.map"
+    "889.9c2ad1e7.chunk.js.map": "/taycoon_spa/static/js/889.9c2ad1e7.chunk.js.map",
+    "514.92888c5e.chunk.js.map": "/taycoon_spa/static/js/514.92888c5e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ab753f89.css",
-    "static/js/main.b2b9d717.js"
+    "static/js/main.3432cef9.js"
   ]
 }
