@@ -1,13 +1,12 @@
 .wrapper {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     width: 250px;
     height: 350px;
     border-radius: 20px;
     background: var(--white, #FFF);
-
     h5 {
+        background-color: red;
         height: 56px;
         margin-top: 85px;
         color: var(--darkgreen, #06413F);
@@ -18,7 +17,6 @@
         line-height: 100%;
         padding: 0 10px;
     }
-
     p {
         margin-top: 100px;
         color: var(--darkgreen, #06413F);
@@ -27,19 +25,15 @@
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
-        /* 36px */
         letter-spacing: 0.72px;
     }
 }
-
 @media screen and (max-width: 1060px) {
-
     .wrapper {
         h5 {
             padding: 0 10px;
             font-size: 24px;
         }
-
         p {
             font-size: 18px;
             padding: 0 10px;
@@ -47,10 +41,6 @@
         }
     }
 }
-
-
-
-
 @media screen and (max-width: 767px) {
 
     .wrapper {

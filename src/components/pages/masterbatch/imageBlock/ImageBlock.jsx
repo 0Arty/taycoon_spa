@@ -5,8 +5,7 @@ const ImageBlock = ({ image, text, paragraph, alt }) => {
 
     return (
         <div className={style.image_content}>
-            <ImageComponent img={image} alt={'asd'}/> 
-
+            <ImageComponent img={image} alt={alt}/> 
             <div className = {style.container} >
                 <h4>{text}</h4>
                 <p>{paragraph}</p>

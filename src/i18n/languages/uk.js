@@ -8,6 +8,7 @@ import { composites } from "./pages/uk/composites"
 import { about } from "./pages/uk/about"
 import { clients } from "./pages/uk/clients"
 import { certificates } from "./pages/uk/certificates"
+import { ImagesAlternative } from "./pages/uk/imagesAlternative"
 
 export const uk = {
     header: headerUK,
@@ -20,6 +21,7 @@ export const uk = {
     aboutPage: about,
     clients: clients,
     certificates: certificates,
+    alt: ImagesAlternative,
 }
 
 

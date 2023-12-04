@@ -1,0 +1,41 @@
+.container {
+    margin-top: 50px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 200px;
+    .text {
+        color: var(--darkgreen, #06413F);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 200%;
+        margin-right: 20px;
+        /* 36px */
+        .paragraph{
+            .link{
+                color: var(--darkgreen, #06413F);
+            }
+        }
+    }
+
+    .image {}
+}
+
+@media screen and (max-width: 767px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        .text{
+            margin: 0;
+            text-align: center;
+        }
+        .image{
+            position: absolute;
+            top: 0px;
+            z-index: -1;
+            opacity: .1;
+        }
+    }
+}

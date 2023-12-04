@@ -1,8 +1,8 @@
 export const footerEN = {
     links: {
-        "masterbatch":"Dyes for polymers",
+        "masterbatch":"Masterbatch for polymers",
         "addtions":"Additives to polymers",
-        "net":"Extruded mesh",
+        "net":"Extruded net",
         "composites":"Composites",
     },
     info:{

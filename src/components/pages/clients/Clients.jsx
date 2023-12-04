@@ -18,7 +18,7 @@ const Clients = ({ props }) => {
  
 
     return (
-        <div className={style.box}>
+        <div className={style.box} ref={refPage}>
             <MenuComponent image={image} alt={''} heading={'Taycoon'} title={t('clients.title')} />
             <div className = {style.content}>
                 <h4 className = {style.ukraninanParters}>{t('clients.ukr')}</h4>

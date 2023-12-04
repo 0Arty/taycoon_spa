@@ -15,7 +15,7 @@ const About = ({ props }) => {
 
     return (
         <div className={style.box} ref={refPage}>
-            <MenuComponent image={image} alt={''} heading={'Taycoon'} title={t('aboutPage.subheading')}/>
+            <MenuComponent image={image} alt={t('alt.about.main')} heading={'Taycoon'} title={t('aboutPage.subheading')}/>
             <Info />
             <Ecology />
             <Footer />

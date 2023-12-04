@@ -9,7 +9,7 @@ const {t} = useTranslation()
   return (
     <div className={style.box} ref={ref}>
       <div className={style.image}>
-        <img src={image} alt="пакувальна сітка для овочів та фруктів" />
+        <img src={image} alt={t('alt.nets.trees')} />
       </div>
       <div className={style.text}>
         <h4>{t('netPage.tree.heading')}</h4>

@@ -9,7 +9,7 @@ const Toys = ({ props }, ref) => {
   return (
     <div className={style.box} ref={ref}>
       <div className={style.image}>
-        <img src={image} alt="пакувальна сітка для овочів та фруктів" />
+        <img src={image} alt={t('alt.nets.toys')} />
       </div>
       <div className={style.text}>
         <h4>{t('netPage.toys.heading')}</h4>

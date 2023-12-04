@@ -6,6 +6,7 @@ import { compositesEn } from "./pages/en/composites";
 import { footerEN } from "./pages/en/footer";
 import { headerEN } from "./pages/en/header";
 import { homePageEN } from "./pages/en/homePage";
+import { ImagesAlternativeEn } from "./pages/en/imagesAlternative";
 import { masterbatchEN } from "./pages/en/masterbatch";
 import { packingNetEN } from "./pages/en/packingNet";
 
@@ -20,4 +21,5 @@ export const en = {
     aboutPage: aboutEN,
     clients: clientsEN,
     certificates: certificatesEN,
+    alt: ImagesAlternativeEn,
 }

@@ -27,21 +27,18 @@ const Cards = ({ props }) => {
             custom={{ delay: 1, startPosition: 30 }}
         >
             <div className={style.card}>
-
                 <Card
                     heading={t('masterbatchPage.methods.cards.card1.heading')}
                     text={t('masterbatchPage.methods.cards.card1.text')}
                 />
             </div>
             <div className={style.card}>
-
                 <Card
                     heading={t('masterbatchPage.methods.cards.card2.heading')}
                     text={t('masterbatchPage.methods.cards.card2.text')}
                 />
             </div>
             <div className={style.card}>
-
                 <Card
                     heading={t('masterbatchPage.methods.cards.card3.heading')}
                     text={t('masterbatchPage.methods.cards.card3.text')}
@@ -53,8 +50,6 @@ const Cards = ({ props }) => {
                     text={t('masterbatchPage.methods.cards.card4.text')}
                 />
             </div>
-
-
         </motion.div>
     )
 };

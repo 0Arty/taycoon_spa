@@ -5,7 +5,7 @@ export const packingNetEN = {
         "crimping" : "For corrugating sausage casings",
         "toys" : "For packaging toys",
         "glass" : "For glass containers",
-        "tree" : "For packing firewood",
+        "tree" : "For protect tree trunks",
 
     },
     vegatbles: {
@@ -32,9 +32,9 @@ export const packingNetEN = {
         "text2" : "It has high strength and elasticity due to special manufacturing technology",
     },
     tree : {
-        "heading" : "Net for packing firewood",
-        "text1" : "Provides reliable fixation and convenient delivery of firewood",
-        "text2" : "The extra strength and resistance to environmental influences make extruded net the optimal choice for firewood packaging and storage",
+        "heading" : "For protect tree trunks",
+        "text1" : "Does not interfere with tree care, additionally protects against snow, does not disturb air circulation",
+        "text2" : "Protects the bark of seedlings and trees from rodents in the winter season",
     },
     glass: {
         "heading" : "Protective net for glass containers, bottles, furniture and metal products",

@@ -31,7 +31,7 @@ const Crimping = ({ props }, ref) => {
                 </div>
             </div>
             <div className={style.image}>
-                <img src={image} alt="пакувальна сітка для овочів та фруктів" />
+                <img src={image} alt={t('alt.nets.crimping')} />
             </div>
 
         </div>

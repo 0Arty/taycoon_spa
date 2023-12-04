@@ -9,6 +9,7 @@ import factory from '../../../../assets/about/factory.svg'
 import advantage from '../../../../assets/about/advantage.svg'
 import lab from '../../../../assets/about/lab.svg'
 import ukr from '../../../../assets/about/ukr.svg'
+import Guarantees from "./guarantees/Guarantees";
 
 
 const Info = ({ props }) => {
@@ -16,11 +17,9 @@ const Info = ({ props }) => {
 
     return (
         <div className={style.box}>
-            <Right
-                text={t('aboutPage.info.guarantees')}
-                img={guarantees}
-                alt={t('aboutPage.img.guarantees')}
-            />
+            <Guarantees t={t} 
+            img={guarantees}
+                alt={t('aboutPage.img.guarantees')} />
             <Left
                 text={t('aboutPage.info.factory')}
                 img={factory}

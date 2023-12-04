@@ -13,14 +13,12 @@ const Methods = ({ props }) => {
     return (
         <div className={style.box}>
             <div className={style.wrapper}>
-
                 <h4>{t('masterbatchPage.methods.heading')}</h4>
                 <Cards />
                 <Upper className={style.upper} />
                 <Down className={style.down} />
                 <Vector1 className={style.vector1} />
                 <Vector2 className={style.vector2} />
-
             </div>
         </div>
     )

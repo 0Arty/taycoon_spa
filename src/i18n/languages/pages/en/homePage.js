@@ -7,7 +7,7 @@ export const homePageEN = {
 
     },
     company: {
-        "heading": "You set a task - we solve it! "
+        "heading": "Your task - our solution!"
     },
     cards: {
         "saving": "Saving",

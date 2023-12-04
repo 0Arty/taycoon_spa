@@ -10,7 +10,7 @@ const Vegetables = ({ props }, ref) => {
     return (
         <div className={style.box} ref={ref}>
             <div className={style.image}>
-                <img src={net} alt="пакувальна сітка для овочів та фруктів" />
+                <img src={net} alt={t('alt.nets.vegetables')} />
             </div>
             <div className={style.text}>
                 <h4>{t('netPage.vegatbles.heading')}</h4>

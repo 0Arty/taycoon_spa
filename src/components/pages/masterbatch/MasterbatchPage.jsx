@@ -11,18 +11,18 @@ import Methods from "./methods/Methods";
 import Footer from "../../reusable/footer/Footer";
 
 const MasterbatchPage = ({ props }) => {
-
+  
   const { t } = useTranslation()
-
+  
   const refPage = useRef(null)
   const refWhite = useRef(null)
   const refBlack = useRef(null)
   const refColors = useRef(null)
 
+  useEffect(() => refPage.current?.scrollIntoView({ block: 'start', behavior: 'smooth' }), [])
   const toWhite = () => refWhite.current?.scrollIntoView({ block: 'start', behavior: 'smooth' })
   const toBlack = () => refBlack.current?.scrollIntoView({ block: 'start', behavior: 'smooth' })
   const toColors = () => refColors.current?.scrollIntoView({ block: 'start', behavior: 'smooth' })
-  useEffect(() => refPage.current?.scrollIntoView({ block: 'start', behavior: 'smooth' }), [])
 
   return (
     <div className={style.masterbatch} ref={refPage}>

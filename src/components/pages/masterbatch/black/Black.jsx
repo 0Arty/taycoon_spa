@@ -34,14 +34,21 @@ const Black = ({ props }, ref) => {
         variants={contentAnimation}
         custom={{ delay: 1, animationPosition: -30 }}
       >
-        <ImageBlock image={Img} text={t('masterbatchPage.black.heading')} paragraph={t('masterbatchPage.black.subheading')} />
+        <ImageBlock
+          image={Img}
+          text={t('masterbatchPage.black.heading')}
+          paragraph={t('masterbatchPage.black.subheading')}
+          alt={t('alt.masterbatcPage.black')}
+        />
       </motion.div>
-      <motion.p className={style.subtext}
+      <motion.p
+        className={style.subtext}
         initial='hidden'
         whileInView='visible'
         variants={contentAnimation}
         custom={{ delay: 1, animationPosition: 30 }}
       >{t('masterbatchPage.black.p1')}</motion.p>
+
       <Table text={t('masterbatchPage.black.table.download')} />
       <AbstractSVG className={style.abbstractSVG} />
     </div>

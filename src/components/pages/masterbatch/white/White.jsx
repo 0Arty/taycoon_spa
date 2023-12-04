@@ -50,37 +50,24 @@ const White = ({ props }, ref) => {
         whileInView='visible'
         variants={contentAnimation.imageBlock}
         custom={0}
-
       >
-
-        <ImageBlock
-          image={WhiteIMG}
-          text={t('masterbatchPage.white.heading')}
-        />
+      <ImageBlock
+        image={WhiteIMG}
+        text={t('masterbatchPage.white.heading')}
+        alt={t('alt.masterbatcPage.white')}
+      />
       </motion.div>
-
       <TextBlock t={t} />
-
       <TableBlock />
-
       <motion.p className={style.addition}
-              initial='hidden'
-              whileInView='visible'
-              variants={contentAnimation.paragraph}
-              custom={1}
-      
+        initial='hidden'
+        whileInView='visible'
+        variants={contentAnimation.paragraph}
+        custom={1}
+
       >
         {t('masterbatchPage.white.text')}
       </motion.p>
-
-      <motion.p className={style.conclusion}
-                    initial='hidden'
-                    whileInView='visible'
-                    variants={contentAnimation.paragraph}
-                    custom={2}>
-        {t('masterbatchPage.white.conclusion')}
-      </motion.p>
-
       <AbstractSVG className={style.abbstractSVG} />
     </div>
   )

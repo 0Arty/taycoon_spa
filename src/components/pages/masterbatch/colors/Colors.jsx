@@ -33,7 +33,7 @@ const Colors = ({ props }, ref) => {
         variants={contentAnimation}
         custom={{ delay: 1, startPosition: -30 }}
       >
-        <ImageBlock image={ColorImg} text={t('masterbatchPage.colors.heading')} paragraph={''} />
+        <ImageBlock image={ColorImg} text={t('masterbatchPage.colors.heading')} paragraph={''} alt={t('alt.masterbatcPage.colors')}/>
       </motion.div>
 
       <motion.p className={classNames(style.paragraph1, style.paragraph)}
