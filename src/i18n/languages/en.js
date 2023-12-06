@@ -9,6 +9,7 @@ import { homePageEN } from "./pages/en/homePage";
 import { ImagesAlternativeEn } from "./pages/en/imagesAlternative";
 import { masterbatchEN } from "./pages/en/masterbatch";
 import { packingNetEN } from "./pages/en/packingNet";
+import { helmet } from "./pages/en/helmet";
 
 export const en = {
     header: headerEN,
@@ -22,4 +23,5 @@ export const en = {
     clients: clientsEN,
     certificates: certificatesEN,
     alt: ImagesAlternativeEn,
+    helmet : helmet,
 }

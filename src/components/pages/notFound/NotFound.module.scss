@@ -1,0 +1,44 @@
+.box{
+    width: 100%;
+    margin-top: 55px;
+    height: calc(100vh - 55px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--green, #056461);
+    position: relative;
+    overflow-y: hidden;
+    .error{
+        text-align: center;
+        font-family: Crimson Text;
+        font-size: 72px;
+        font-weight: 700;
+    }
+    .error_title{
+        margin: 10px 0 20px 0  ;
+        font-size: 18px;
+    }
+    .link{
+        font-size: 18px;
+        transition: 0.3s;
+        color: var(--green, #056461);
+        &:hover{
+            cursor: pointer;
+            transition: 0.3s;
+            color: #FAC149;
+        }
+    }
+    .svg{
+        position: absolute;
+        z-index: -1;
+        opacity: 0.6;
+    }
+}
+@media screen and (max-width: 767px){
+    .box{
+        .error{
+            font-size: 54px;
+        }
+    }
+}

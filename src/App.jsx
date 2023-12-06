@@ -3,16 +3,7 @@ import style from "./App.module.scss"
 import { routes } from "./routes/index.js";
 import { Route, Routes } from "react-router-dom";
 import { Suspense, lazy, useRef } from "react";
-
-// import HomePage from "./components/pages/homePage/HomePage";
-// import MasterbatchPage from "./components/pages/masterbatch/MasterbatchPage";
-// import Net from "./components/pages/net/Net.jsx";
-// import Header from "./components/reusable/header/Header";
-// import Addivities from "./components/pages/addivities/Addivities.jsx";
-// import Composites from "./components/pages/composites/Composites.jsx";
-// import About from "./components/pages/about/About.jsx";
-// import Certificates from './components/pages/certificates/Certificates.jsx';
-// import Clients from './components/pages/clients/Clients.jsx';
+import NotFound from './components/pages/notFound/NotFound.jsx';
 
 const HomePage = lazy(() => import("./components/pages/homePage/HomePage"))
 const MasterbatchPage = lazy(() => import("./components/pages/masterbatch/MasterbatchPage"))
@@ -74,6 +65,7 @@ const App = ({ props }) => {
             <Clients />
           </Suspense >
         } />
+        <Route path='*' element={<NotFound />} />
 
         {/* <Route path='*' element={NotFound}/> */}
       </Routes>

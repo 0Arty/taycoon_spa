@@ -5,6 +5,8 @@ import Content from "./content/Content";
 import PopUp from "./popUp/PopUp";
 import Footer from "../../reusable/footer/Footer";
 import TextBlock from "./text/TextBlock";
+import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
 
 const Addivities = ({ props }) => {
@@ -22,9 +24,13 @@ const Addivities = ({ props }) => {
 
   useEffect(() => refPage.current?.scrollIntoView({ block: 'start', behavior: 'smooth' }), [])
   const toHandle = (ref) => ref.current?.scrollIntoView({ block: 'center', behavior: 'smooth' })
-
+  const { t } = useTranslation()
   return (
     <div className={style.box} ref={refPage}>
+      <Helmet >
+        <meta charSet="utf-8"></meta>
+        <title> {t('helmet.addivities')} </title>
+      </Helmet>
       <Menu refs={refs} toHandle={toHandle} />
       <Content refs={refs} />
       <PopUp />

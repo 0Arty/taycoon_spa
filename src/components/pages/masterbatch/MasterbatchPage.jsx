@@ -9,11 +9,12 @@ import Black from "./black/Black";
 import Colors from "./colors/Colors";
 import Methods from "./methods/Methods";
 import Footer from "../../reusable/footer/Footer";
+import { Helmet } from "react-helmet";
 
 const MasterbatchPage = ({ props }) => {
-  
+
   const { t } = useTranslation()
-  
+
   const refPage = useRef(null)
   const refWhite = useRef(null)
   const refBlack = useRef(null)
@@ -26,6 +27,11 @@ const MasterbatchPage = ({ props }) => {
 
   return (
     <div className={style.masterbatch} ref={refPage}>
+      <Helmet >
+        <meta charSet="utf-8"></meta>
+        <title> {t('helmet.masterbatch')} </title>
+      </Helmet>
+
       <Menu toWhite={toWhite} toBlack={toBlack} toColors={toColors} />
       <Colors ref={refColors} />
       <White ref={refWhite} />

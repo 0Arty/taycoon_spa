@@ -9,6 +9,7 @@ import { about } from "./pages/uk/about"
 import { clients } from "./pages/uk/clients"
 import { certificates } from "./pages/uk/certificates"
 import { ImagesAlternative } from "./pages/uk/imagesAlternative"
+import { helmet } from "./pages/uk/helmet"
 
 export const uk = {
     header: headerUK,
@@ -22,6 +23,8 @@ export const uk = {
     clients: clients,
     certificates: certificates,
     alt: ImagesAlternative,
+    helmet : helmet,
+    
 }
 
 

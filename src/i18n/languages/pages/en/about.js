@@ -11,7 +11,7 @@ export const aboutEN = {
     eco:{
         "heading":"Ecology",
         "p1":"Our environmental policy meets European standarts and principles of reducing negative impact of polymer production",
-        "p2":"We carefully select raw materials for the production of additives, super concentrates of masterbatches and packaging net",
+        "p2":"We carefully select raw materials for the production of additives, masterbatches and packaging net",
         "p3":"The company operates and develops non-waste production, striving to maximise the use of resources and prevent the generation of unnecessary waste. we have developed a composite materials in which the proportion of polymer is reduced by recycling wood",
         "p4":"It is important for us to optimise the usage of raw materials, energy, water and other resources, reducing their consumption and negative impact on the environment. To reduce air emissions, we have installed a gas cleaning unit with an SFC 100-40 fabric filter designed to clean the gas-air mixture from suspended solid particles generated during the production process",
         "p5":"Trainings are available of staff regular basis. Our recipes environmental and friendly",

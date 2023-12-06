@@ -8,6 +8,8 @@ import Toys from "./toys/Toys";
 import Vegetables from "./vegetables/Vegetables";
 import Cards from "./cards/Cards";
 import Tree from "./tree/Tree";
+import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
 const Net = ({ props }) => {
 
@@ -32,9 +34,14 @@ const Net = ({ props }) => {
         toGlass,
         toTree
     }
+    const {t} = useTranslation()
 
     return (
         <div className={style.box} ref={refPage}>
+            <Helmet >
+                <meta charSet="utf-8"></meta>
+                <title> {t('helmet.extruded net')} </title>
+            </Helmet>
             <Menu transition={transition} />
             <Vegetables ref={refVegetable} />
             <hr />
@@ -43,7 +50,7 @@ const Net = ({ props }) => {
             <Toys ref={refToys} />
             <hr />
             <Glass ref={refGlass} />
-            <Tree ref={refTree}/>
+            <Tree ref={refTree} />
             <Cards />
             <Footer />
         </div>

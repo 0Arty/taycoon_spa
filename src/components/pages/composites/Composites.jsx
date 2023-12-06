@@ -8,6 +8,7 @@ import { LOCALS } from "../../../i18n/constants";
 import { ReactComponent as Download } from '../../../assets/masterbatchpage/pdfs/pdfLogo.svg'
 import pdf_ua from '../../../assets/composites/composites_ua.pdf'
 import pdf_en from '../../../assets/composites/composites_en.pdf'
+import { Helmet } from "react-helmet";
 
 const Composites = ({ props }) => {
 
@@ -16,6 +17,10 @@ const Composites = ({ props }) => {
 
     return (
         <div className={style.box}>
+            <Helmet >
+                <meta charSet="utf-8"></meta>
+                <title> {t('helmet.composites')} </title>
+            </Helmet>
             <div className={style.image}>
                 <img src={image} alt='Композити' />
             </div>
