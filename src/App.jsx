@@ -4,6 +4,7 @@ import { routes } from "./routes/index.js";
 import { Route, Routes } from "react-router-dom";
 import { Suspense, lazy, useRef } from "react";
 import NotFound from './components/pages/notFound/NotFound.jsx';
+import Redirect from './components/reusable/redirect/Redirect.jsx';
 
 const HomePage = lazy(() => import("./components/pages/homePage/HomePage"))
 const MasterbatchPage = lazy(() => import("./components/pages/masterbatch/MasterbatchPage"))
@@ -65,9 +66,10 @@ const App = ({ props }) => {
             <Clients />
           </Suspense >
         } />
-        <Route path='*' element={<NotFound />} />
-
-        {/* <Route path='*' element={NotFound}/> */}
+        <Route path={routes.EN} element={<Redirect />} />
+        <Route path={routes.RU} element={<Redirect />} />
+        <Route path={routes.UA} element={<Redirect />} />
+        <Route path={'*'} element={<NotFound />} />
       </Routes>
     </div>
   )

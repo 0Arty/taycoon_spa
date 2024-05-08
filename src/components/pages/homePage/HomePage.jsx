@@ -24,7 +24,6 @@ const HomePage = ({ refContact}, ref) => {
         <meta charSet="utf-8"></meta>
         <title> {t('helmet.home')} </title>
       </Helmet>
-
       <Products />
       <Company />
       <Cards />

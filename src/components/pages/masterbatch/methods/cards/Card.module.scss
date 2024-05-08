@@ -5,23 +5,19 @@
     height: 350px;
     border-radius: 20px;
     background: var(--white, #FFF);
+    text-align: center;
     h5 {
         height: 56px;
         margin-top: 85px;
         color: var(--darkgreen, #06413F);
-        text-align: center;
         font-size: 24px;
-        font-style: normal;
         font-weight: 400;
-        line-height: 100%;
         padding: 0 10px;
     }
     p {
         margin-top: 100px;
         color: var(--darkgreen, #06413F);
-        text-align: center;
         font-size: 20px;
-        font-style: normal;
         font-weight: 400;
         line-height: 150%;
         letter-spacing: 0.72px;

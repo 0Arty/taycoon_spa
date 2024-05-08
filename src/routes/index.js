@@ -6,7 +6,8 @@ export const routes = {
     MAIN: "/",
     ABOUT: '/about',
     CERTIFICATES : '/certificates',
-    CLIENTS: '/clients'
-    
-
+    CLIENTS: '/clients',
+    RU:'/ru*',
+    EN:'/en*',
+    UA:'/ua*'
 }

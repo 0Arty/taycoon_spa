@@ -1,10 +1,11 @@
-import ImageComponent from "../BGImage/BgImage";
-import style from "./MenuComponent.module.scss"
+import style from './MenuComponent.module.scss'
+import ImageComponent from "../BGImage/BgImage"
 
 const MenuComponent = ({ image, alt, heading, title }) => {
 
     return (
         <div className={style.box}>
+
             <ImageComponent img={image} alt={alt} />
             <div className = {style.container}>
             <h3>{heading}</h3>

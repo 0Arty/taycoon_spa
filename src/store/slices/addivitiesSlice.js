@@ -20,7 +20,6 @@ const initialState = {
                     },
                 },
                 {
-
                     name: 'PE 0602 F',
                     parameters: {
                         meltFlow: true,
@@ -65,7 +64,7 @@ const initialState = {
                 },
                 {
 
-                    name: 'PE 0029 F',
+                    name: 'PP 0029 F',
                     parameters: {
                         meltFlow: true,
                         liquidityIndex: true
@@ -73,7 +72,7 @@ const initialState = {
                 },
                 {
 
-                    name: 'PE 0051 F',
+                    name: 'PP 0051 F',
                     parameters: {
                         meltFlow: true,
                         liquidityIndex: true

@@ -122,7 +122,7 @@ export const addivitiesEN = {
          }
 
     },
-    "PE 0029 F": {
+    "PP 0029 F": {
         "heading": "UV stabiliser",
         "short": "Used to adjust the friction coefficient тертя",
         meltFlow: {
@@ -135,14 +135,14 @@ export const addivitiesEN = {
             "units": "°C",
             "value": "155",
         },
-        "polymer": "PE - homopolymer",
+        "polymer": "PP - homopolymer",
         paragraphs: {
             "usage": "This product contains 20% UV stabiliser (HALS) and is intended for use in polypropylene products such as films and tapes. Recommended for use in transparent products",
             "dosage": "The percentage of injection depends on the thickness of the product and the operating conditions of the final product. Recommended percentage of penetration 2%.",
             "saving": "It is recommended to store this product, in its original packaging, in a dry and cool place at a temperature not exceeding 35°C, out of direct sunlight",
          }
     },
-    "PE 0051 F": {
+    "PP 0051 F": {
         "heading": "UV stabiliser",
         "short": "Used to adjust the friction coefficient",
         meltFlow: {
@@ -155,7 +155,7 @@ export const addivitiesEN = {
             "units": "°C",
             "value": "155",
         },
-        "polymer": "PE - homopolymer",
+        "polymer": "PP - homopolymer",
         paragraphs: {
             "usage": "This product contains 20% UV stabiliser and is intended for use in polypropylene products such as films and tapes",
             "dosage": "The percentage of injection depends on the thickness of the product and the operating conditions of the final product. Recommended percentage of injection is 1.5%.",

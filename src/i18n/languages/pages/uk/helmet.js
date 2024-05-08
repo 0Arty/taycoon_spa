@@ -7,4 +7,8 @@ export const helmet = {
     "certificates":"Сертифікати",
     "clients":"Клієнти",
     "home":"Головна",
+    error404: {
+        "notFound":"Сторінка не знайдена",
+        "to home page":"На головну",
+    }
 }
